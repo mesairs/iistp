@@ -433,3 +433,109 @@ header.active .menuToggle::after{
   max-height: 25%;
 }
 }
+
+@media(max-width: 750px){
+  header{
+      padding: 10px 20px;
+      background-color: #0047AB;
+  }
+  header nav{
+      position: absolute;
+      width: 100%;
+      top: 66px;
+      left: 0px;
+      background-color: #0047AB;
+      display: none;
+  }
+
+  header.active nav{
+      display: initial;
+  }
+  header nav ul li{
+      margin: auto;
+      width: 100%;
+  }
+  header nav ul li ul{
+      position: relative;
+      width: 100%;
+      left: 0;
+  }
+  header nav ul li ul li{
+      top: 0;
+      left: 0;
+  }
+  header nav ul li:hover ul li{
+      background-color: #0047AB;
+  }
+  .menuToggle{
+      position: relative;
+      width: 40px;
+      height: 50px;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .menuToggle::before{
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 3px;
+      background: #fff;
+      transform: translateY(-12px);
+      box-shadow: 0 12px #fff;
+  }
+  .menuToggle::after{
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 3px;
+      background: #fff;
+      transform: translateY(12px);
+  }
+  header.active .menuToggle::before{
+      transform: rotate(45deg);
+      box-shadow: 0 0 #fff;
+  }
+
+  header.active .menuToggle::after{
+      transform: rotate(315deg);
+  }
+
+  .i-cards{
+    display: none;
+  }
+
+  .ad-card-wrap .cards p{
+    display: flex;
+    font-size: 12px;
+  }
+
+  .ad-card-wrap .cards {
+    width: 80%;
+    height: 50%;
+  }
+  .cards p{
+    display: none;
+  }
+
+  .c-cards ul{
+    display: none;
+  }
+
+  .c-cards h3{
+    font-size: medium;
+  }
+
+  .cards li{
+    font-size: smaller;
+  }
+
+  .c-cards span.title-color{
+    display: none;
+  }
+
+  .cards .hsc-title h1{
+    font-size: 32px;
+  }
+}
