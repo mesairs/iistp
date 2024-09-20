@@ -33,7 +33,7 @@ body {
 section {
   position: relative;
   width: 100%;
-  height: 100%;
+  min-height: 100vh;
 }
 
 /* Header Nav */
@@ -98,7 +98,7 @@ header ul li ul li {
   object-fit: cover;
   position: absolute;
   width: 100%;
-  height: 100vh;
+  height: 100%;
 }
 
 .home-content {
@@ -111,6 +111,45 @@ header ul li ul li {
   position: relative;
 }
 
+.arr-down{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  gap: 10px;
+  padding: 50px;
+  color: #fff;
+  bottom: 0;
+}
+
+.arr-down .arr{
+  background-color: rgb(0, 0, 0, 0.5);
+  width: 50px;
+  border-radius: 100%;
+}
+
+.arr-down .arr span{
+  font-size: 2em;
+}
+
+.arr-down p{
+  background-color: rgb(0, 0, 0, 0.5);
+  border-radius: 50px;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.arr a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.arr-down .arr:hover{
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: scale(1.15);
+}
 .home-content h2 {
   font-family: Old;
   color: #fff;
@@ -119,6 +158,31 @@ header ul li ul li {
   text-shadow: 0 1px 0 #000, 0 2px 0 #000, 0 3px 0 #000, 0 4px 0 #000;
 }
 
+#welcome{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+  height: 100vh;
+  color: #1434a4;
+}
+
+#welcome .introduction{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 4px;
+}
+
+.introduction h1{
+  font-size: 92px;
+}
+
+.introduction p{
+  font-size: 24px;
+}
 .btn {
   margin-top: 20px;
 }
@@ -630,6 +694,7 @@ span.title-color {
   .c-cards h3{
     display: none;
   }
+
 
   .footer{
     margin-top: 0px;
