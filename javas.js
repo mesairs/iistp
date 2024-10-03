@@ -1,3 +1,8 @@
+let menuToggle = document.querySelector('.menuToggle');
+let header = document.querySelector('header');
+menuToggle.onclick = function () {
+  header.classList.toggle('active');
+}
 
 var swiper = new Swiper(".mySwiper", {
   loop: true,
@@ -13,11 +18,6 @@ var swiper = new Swiper(".mySwiper", {
   }
 });
 
-let menuToggle = document.querySelector('.menuToggle');
-let header = document.querySelector('header');
-menuToggle.onclick = function () {
-  header.classList.toggle('active');
-}
 var swiper = new Swiper(".EventSlider", {
   loop: true,
   slidesPerView: 1,
@@ -33,4 +33,10 @@ var swiper = new Swiper(".EventSlider", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 5
+    }
+  }
 });

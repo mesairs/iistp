@@ -754,7 +754,6 @@ span.title-color {
   
 }
 
-
 #news-page .swiper-pagination {
   margin-bottom: 760px;
   padding: 10px;
@@ -919,6 +918,7 @@ hr {
     left: 0px;
     background-color: #0047ab;
     display: none;
+    
   }
 
   header.active nav {
@@ -1136,5 +1136,66 @@ hr {
   .item img{
     max-width: 25%;
     max-height: 25%;
+  }
+
+  .news-card2{
+    display: none;
+  }
+
+  .news-card{
+    margin-top: 24px;
+  }
+
+  .news-cc1  {
+    width: 280px;
+    height: 100%;
+  }
+
+  .fb-content{
+    display: none;
+  }
+
+  .single{
+    font-size: 0.8em;
+    width: 260px;
+    text-wrap: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  } 
+
+  #related-post{
+    height: 100%;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: auto;
+    text-align: center;
+  }
+
+  #related-post h1{
+    font-size: 1em;
+  }
+
+  .news-card-wrap{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+
+  .n-card{
+    width: 120px;
+    height: 120px;
+    font-size: 0.5em;
+  }
+
+  #news-page .swiper-pagination{
+    margin-bottom: 64px;
+  }
+
+  #news-page .swiper-pagination-bullet{
+    width: 32px;
+    position: initial;
   }
 }
