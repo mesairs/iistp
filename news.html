@@ -7,11 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v21.0"></script>
     <script src="javas.js" defer></script>
     <title>News</title>
     <link rel="stylesheet" href="style.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap" rel="stylesheet">
 </head>
 
@@ -33,26 +33,30 @@
     <section id="news-page">
         <div class="swiper-pagination"></div>
         <!-- Swiper -->
-        <div class="swiper mySwiperNews">
+        <div class="swiper EventSlider">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="news-wrap">
                         <div class="news-card">
                             <div class="news-cc1">
                                 <a href="#"><img src="./images/tuition.jpg">
-                                <h2 class="single">You can Enroll Now, with an initial fee of PHP 5,000 for SY 2024-2025
-                                </h2></a>
+                                    <h2 class="single">You can Enroll Now, with an initial fee of PHP 5,000 for SY
+                                        2024-2025
+                                    </h2>
+                                </a>
                             </div>
                         </div>
 
                         <div class="news-card2">
                             <div class="news-cc2">
                                 <a href="#"><img src="./images/buwanngwika1.jpg">
-                                <h4 class="double">IIST Celebrates Buwan ng Wika 2024</h4></a>
+                                    <h4 class="double">IIST Celebrates Buwan ng Wika 2024</h4>
+                                </a>
                             </div>
                             <div class="news-cc2">
                                 <a href="#"><img src="./images/foundationday1.jpg">
-                                <h4 class="double">The CSG annual Outreach program for those in need</h4></a>
+                                    <h4 class="double">The CSG annual Outreach program for those in need</h4>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -62,41 +66,23 @@
                         <div class="news-card">
                             <div class="news-cc1">
                                 <a href="#"><img src="./images/sportsfest2.jpg">
-                                <h2 class="single">Students prepare for this year's Student Fest, different org's will
-                                    go head to head</h2></a>
+                                    <h2 class="single">Students prepare for this year's Student Fest, different org's
+                                        will
+                                        go head to head</h2>
+                                </a>
                             </div>
                         </div>
 
                         <div class="news-card2">
                             <div class="news-cc2">
                                 <a href="#"><img src="./images/foundationday2.jpg">
-                                <h4 class="double">Foundation Day starts of with a Mix of Colors</h4></a>
+                                    <h4 class="double">Foundation Day starts of with a Mix of Colors</h4>
+                                </a>
                             </div>
                             <div class="news-cc2">
                                 <a href="#"><img src="./images/studfestc.jpg">
-                                <h4 class="double">Coronation Night, Campus King and Queen</h4></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="news-wrap">
-                        <div class="news-card">
-                            <div class="news-cc1">
-                                <img src="./images/tuition.png">
-                                <h2 class="single">You can Enroll Now, with an initial fee of PHP 5,000 for School Year
-                                    2024-2025</h2>
-                            </div>
-                        </div>
-
-                        <div class="news-card2">
-                            <div class="news-cc2">
-                                <img src="./images/buwanngwika1.jpg">
-                                <h4 class="double">IIST Celebrates Buwan ng Wika 2024</h4>
-                            </div>
-                            <div class="news-cc2">
-                                <img src="./images/foundationday1.jpg">
-                                <h4 class="double">The CSG annual Outreach program for</h4>
+                                    <h4 class="double">Coronation Night, Campus King and Queen</h4>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -108,23 +94,74 @@
     </section>
 
     <section id="related-post">
-        <div class="rp-wrap">
-            <h1>Related Post</h1>
+        <div class="fb-content">
+            <h1>Latest Announcement</h1>
             <hr>
+            <div id="fb-root">
+            </div>
+            <div class="fb-page" data-tabs="timeline,messages" data-href="https://www.facebook.com/ImusInstituteInc"
+                data-width="500px" data-hide-cover="false"></div>
+        </div>
+        </div>
 
-            <div class="rp-content-wrap">
-                <div>
-                    <iframe
-                        src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FImusInstituteInc&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId"
-                        width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
-                        allowfullscreen="true"
-                        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        <div class="news-articles">
+            <h1>News Articles</h1>
+            <hr>
+            <div class="news-card-wrap">
+                <div class="n-card">
+                    <a href="#">
+                    <img src="./images/tuition.jpg">
+                    <div class="news-title">
+                        <h4>Lorem ipsum dolor sit amet elit. Accusamus, ipsum.</h4>
+                    </div>
+                </a>
                 </div>
 
-                <div>
-
-                    <!-- Swiper -->
+                <div class="n-card">
+                    <a href="#">
+                    <img src="./images/studfestc.jpg">
+                    <div class="news-title">
+                        <h4>Lorem ipsum dolor sit amet elit. Accusamus, ipsum.</h4>
+                    </div>
+                </a>
                 </div>
+
+                <div class="n-card">
+                    <a href="#">
+                    <img src="./images/foundationday1.jpg">
+                    <div class="news-title">
+                        <h4>Lorem ipsum dolor sit amet elit. Accusamus, ipsum.</h4>
+                    </div>
+                </a>
+                </div>
+
+                <div class="n-card">
+                    <a href="#">
+                    <img src="./images/outreach1.jpg">
+                    <div class="news-title">
+                        <h4>Lorem ipsum dolor sit amet elit. Accusamus, ipsum.</h4>
+                    </div>
+                </a>
+                </div>
+
+                <div class="n-card">
+                    <a href="#">
+                    <img src="./images/sportsfest2.jpg">
+                    <div class="news-title">
+                        <h4>Lorem ipsum dolor sit amet elit. Accusamus, ipsum.</h4>
+                    </div>
+                </a>
+                </div>
+
+                <div class="n-card">
+                    <a href="#"> 
+                    <img src="./images/foundationday2.jpg">
+                    <div class="news-title">
+                        <h4>Lorem ipsum dolor sit amet elit. Accusamus, ipsum.</h4>
+                    </div>
+                </a>
+                </div>
+             
             </div>
         </div>
     </section>

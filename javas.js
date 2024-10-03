@@ -1,21 +1,14 @@
 
 var swiper = new Swiper(".mySwiper", {
-  // autoplay: {
-  //   delay: 5000,
-  // },
-  loop: false,
+  loop: true,
   direction: "horizontal",
   pagination: {
     el: '.swiper-pagination',
     clickable: true},
   breakpoints: {
-    640: {
+    320: {
       slidesPerView: 1,
       spaceBetween: 5
-    },
-    1024: {
-      slidesPerView: 1,
-      spaceBetween: 20
     }
   }
 });
@@ -25,14 +18,11 @@ let header = document.querySelector('header');
 menuToggle.onclick = function () {
   header.classList.toggle('active');
 }
-
 var swiper = new Swiper(".EventSlider", {
-  spaceBetween: 500,
   loop: true,
-  centeredSlides: true,
   slidesPerView: 1,
   autoplay: {
-    delay: 5000,
+    delay: 10000,
     disableOnInteraction: false,
   },
   pagination: {

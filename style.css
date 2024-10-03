@@ -18,7 +18,6 @@ body {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
   min-height: 100vh;
-  background-color: #fff;
   font-family: Poppins;
 }
 
@@ -566,9 +565,10 @@ span.title-color {
 
 /* Campus */
 .events-extra{
-  height: 100vh;
+  height: 100%;
   position: relative;
-  color: #17569a;
+  color: #fff;
+  background-color: #17569a;
 }
 .hsc-container{
   display: flex;
@@ -597,12 +597,12 @@ span.title-color {
 }
 
 .item a{
-  color: #17569a;
+  color: #fff;
   text-decoration: none;
 }
 
 .item a:visited {
-  color: #17569a;
+  color: #fff;
 }
 
 .item img{
@@ -677,12 +677,13 @@ span.title-color {
 }
 #related-post {
   height: 100vh;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: auto auto;
   justify-content: center;
   align-items: center;
   position: relative;
   color: #fff;
+  gap: 16px;
   background-color: #1434a4;
 }
 
@@ -703,6 +704,54 @@ span.title-color {
   display: grid;
   grid-template-columns: auto auto;
   gap: 12px;
+}
+
+.fb-page{
+  width: 500px;
+}
+#related-post hr{
+  margin: 4px;
+}
+.news-card-wrap{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 16px;
+}
+
+.n-card{
+  width: 280px;
+  height: 320px;
+  border: solid 2px #fff;
+  position: relative;
+}
+
+.n-card a{
+  text-decoration: none;
+  position: relative;
+}
+
+.n-card a:visited{
+  color: fff;
+  text-decoration: none;
+}
+
+.n-card img{
+  opacity: 0.95;
+  width: 100%;
+  height: 100%;
+}
+
+.n-card .news-title{
+  position: absolute;
+  bottom: 6px;
+  padding-left: 2px;
+}
+
+.n-card .news-title h4{
+  color: #fff;
+  text-shadow: 1.41px 1.41px black, 2px 0 black, 1.41px -1.41px black,
+    0 -2px black;
+  
 }
 
 
