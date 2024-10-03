@@ -1,15 +1,16 @@
 var swiper = new Swiper(".mySwiper", {
-autoplay: true,
-loop: true,
-navigation: {
-  nextEl: ".swiper-button-next",
-  prevEl: ".swiper-button-prev",
-},
-direction: "horizontal",
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
+  // autoplay: {
+  //   delay: 5000,
+  // },
+  loop: false,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
+  direction: "horizontal",
+  pagination: {
+    el: '.swiper-pagination-news',
+    clickable: true},
   breakpoints: {
     640: {
       slidesPerView: 1,
@@ -18,13 +19,14 @@ direction: "horizontal",
     1024: {
       slidesPerView: 1,
       spaceBetween: 20
-    }}
+    }
+  }
 });
 
 let menuToggle = document.querySelector('.menuToggle');
 let header = document.querySelector('header');
 menuToggle.onclick = function () {
-    header.classList.toggle('active');
+  header.classList.toggle('active');
 }
 
 var swiper = new Swiper(".EventSlider", {
@@ -33,7 +35,7 @@ var swiper = new Swiper(".EventSlider", {
   centeredSlides: true,
   slidesPerView: 1,
   autoplay: {
-    delay: 2500,
+    delay: 5000,
     disableOnInteraction: false,
   },
   pagination: {
