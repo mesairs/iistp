@@ -1,15 +1,12 @@
+
 var swiper = new Swiper(".mySwiper", {
   // autoplay: {
   //   delay: 5000,
   // },
   loop: false,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
   direction: "horizontal",
   pagination: {
-    el: '.swiper-pagination-news',
+    el: '.swiper-pagination',
     clickable: true},
   breakpoints: {
     640: {

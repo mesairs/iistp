@@ -493,6 +493,11 @@ span.title-color {
   gap: 40px;
   color: #17569a;
 }
+
+.hs-card-wrap{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
 .h-card-wrap {
   display: flex;
   flex-direction: row;
@@ -545,27 +550,7 @@ span.title-color {
   height: 100%;
   object-fit: cover;
 }
-/* space */
-.swiper-pagination {
-  margin-bottom: 760px;
-  padding: 10px;
-  position: absolute;
-}
 
-.swiper-pagination-bullet {
-  border: solid 1px #7cb9e8;
-  background-color: #fff;
-  width: 200px;
-  border-radius: 0px;
-  opacity: 1;
-}
-
-.swiper-pagination-bullet-active {
-  width: 200px;
-  border-radius: 0px;
-  background-color: #17569a !important;
-}
-/* space */
 .swiper-button-prev {
   color: #17569a;
 }
@@ -653,13 +638,7 @@ span.title-color {
   position: relative;
 }
 
-.news-card,
-.news-card2 {
-  display: -webkit-box;
-  -webkit-line-clamp: 2; /* number of lines to show */
-  line-clamp: 2;
-  -webkit-box-orient: vertical;
-}
+
 
 .news-cc1 {
   height: 600px;
@@ -668,7 +647,7 @@ span.title-color {
 
 .news-cc1 img {
   width: 100%;
-  height: 100%;
+  height: 90%;
   border: solid 2px #002d62;
 }
 
@@ -676,6 +655,11 @@ span.title-color {
   width: 360px;
   height: 260px;
   border: solid 2px #002d62;
+}
+
+.news-card a, .news-card2 a{
+  text-decoration: none;
+  color: #1434a4;
 }
 
 .single {
@@ -703,6 +687,8 @@ span.title-color {
 }
 
 .rp-wrap {
+  display: grid;
+  grid-template-columns: auto;
   margin: 32px;
 }
 
@@ -710,15 +696,23 @@ span.title-color {
   color: #fff;
   font-size: 2em;
   width: 80vw;
+  margin: 12px 0px 24px 0px;
 }
 
-.swiper-pagination-news {
+.rp-content-wrap{
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 12px;
+}
+
+
+#news-page .swiper-pagination {
   margin-bottom: 760px;
   padding: 10px;
   position: absolute;
 }
 
-.swiper-pagination-news-bullet {
+#news-page .swiper-pagination-bullet {
   border: solid 1px #7cb9e8;
   background-color: #fff;
   width: 200px;
@@ -726,7 +720,7 @@ span.title-color {
   opacity: 1;
 }
 
-.swiper-pagination-news-bullet-active {
+#news-page .swiper-pagination-bullet-active {
   width: 200px;
   border-radius: 0px;
   background-color: #17569a !important;
