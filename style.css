@@ -564,6 +564,40 @@ span.title-color {
 }
 
 /* Campus */
+
+.facilities{
+  height: 100%;
+  position: relative;
+  color: #1434a4;
+}
+
+.facilities h1{
+  font-size: 2em;
+}
+
+.facilities-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+  gap: 24px;
+}
+
+.facilities-content{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  margin: auto;
+  text-align: center;
+  gap: 64px;
+}
+
+.facilities-content img{
+  height: 240px;
+  width: 360px;
+  border-radius: 25%;
+}
+
 .events-extra{
   height: 100%;
   position: relative;
@@ -578,7 +612,7 @@ span.title-color {
 }
 
 .cards .hsc-title h1{
-  font-size: 100px;
+  font-size: 72px;
   text-shadow: 0 1px 0 #7CB9E8, 0 2px 0 #7CB9E8, 0 3px 0 #7CB9E8,
     0 4px 0 #7CB9E8, 0 5px 0 #7CB9E8, 0 6px 0 #7CB9E8;
 }
@@ -772,6 +806,34 @@ span.title-color {
   width: 200px;
   border-radius: 0px;
   background-color: #17569a !important;
+}
+
+
+/* News page Article format */
+#article-s{
+  background-color: #17569a;
+  padding: 100px;
+}
+.article-wrapper{
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+  margin: auto;
+  height: 100%;
+  width: 1000px;
+  border: solid 2px #fff;
+  border-radius: 12px;
+  color: #fff;
+  background-color: #0047ab;
+}
+
+.article-wrapper .article-content{
+  text-align: left;
+  padding: 32px;
+}
+
+.article-content{
+  font-size: 1.2em;
 }
 /* About page */
 #about-page {
@@ -1116,7 +1178,44 @@ hr {
   }
 
   .hsc-container .hsc-title h1{
-    font-size: 2.5em;
+    font-size: 1em;
+  }
+
+  .facilities{
+    height: 100%;
+    position: relative;
+    color: #1434a4;
+  }
+  
+  .facilities h1{
+    font-size: 1em;
+  }
+  
+  .facilities-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 124px 8px 24px 8px;
+    gap: 16px;
+  }
+
+  .facilities-wrapper h1{
+    font-size: 2em;
+  }
+  
+  .facilities-content{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: auto;
+    text-align: center;
+    gap: 32px;
+  }
+  
+  .facilities-content img{
+    height: 70px;
+    width: 120px;
+    border-radius: 25%;
   }
   
   
@@ -1136,6 +1235,14 @@ hr {
   .item img{
     max-width: 25%;
     max-height: 25%;
+  }
+
+  .item h2{
+    font-size: 1em;
+  }
+
+  .item p{
+    font-size: 0.8em;
   }
 
   .news-card2{
