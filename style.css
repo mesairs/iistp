@@ -45,7 +45,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 1;
+  z-index: 20;
 }
 header .logo img {
   height: 60px;
@@ -967,11 +967,11 @@ hr {
   line-height: 1.5;
 }
 
-@media (max-width: 320px) or (max-width: 480px) {
+@media (max-width: 1000px) or (max-width: 1200px) {
   header {
     padding: 10px 20px;
     background-color: #0047ab;
-    z-index: 1;
+    z-index: 20;
   }
   header nav {
     position: absolute;
@@ -1043,11 +1043,368 @@ hr {
 
   .h-container {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: auto;
+    row-gap: 8px;
   }
 
   .h-container .h-title h1 {
-    font-size: 1.8em;
+    font-size: 1.5em;
+  }
+
+  .h-card-wrap p {
+    font-size: 1em;
+  }
+
+  .hs-card-wrap {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .hs-card-wrap p {
+    font-size: 0.8em;
+  }
+
+  .h-card-wrap .cards li {
+    font-size: 0.8em;
+  }
+
+  .hsc-container .hsc-title h1{
+    font-size: 1em;
+  }
+
+  .h-card-wrap h1{
+  display: grid;
+  grid-template-columns: auto auto;
+  }
+
+  .h-card-wrap .nkpd, .h-card-wrap .stitle-color{
+    font-size: 1em;
+  }
+
+  .h-card-college{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 24px;
+  }
+
+  .c-cards li {
+    font-size: 0.7em;
+  }
+
+  .c-cards h3 {
+    display: none;
+  }
+
+  #location h1 {
+    font-size: 2em;
+  }
+
+  #map iframe {
+    width: 100%;
+    height: 100%;
+  }
+
+  #welcome h1 {
+    font-size: 4em;
+  }
+
+  #welcome h2 {
+    font-size: 2em;
+  }
+
+  #identity .card-ic {
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: center;
+    font-size: 1em;
+    color: #fff;
+    gap: 5px;
+  }
+
+  .card-ic .cardz {
+    height: 100%;
+    width: 100%;
+    border-radius: 12px;
+    background-color: #17569a;
+  }
+
+  .card-ic .cardz h1,
+  .card-ic .cardz p {
+    font-size: 0.8em;
+  }
+
+  .card-ic .cardz img {
+    width: 64px;
+    height: 72px;
+  }
+
+
+  #identity .why-choose h1 {
+    font-size: 2.5em;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  #news h1 {
+    font-size: 2em;
+  }
+
+  .news-events {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+  }
+
+  .i-items h2 {
+    font-size: 1em;
+  }
+
+  .i-items .btn2 p {
+    font-size: 0.8em;
+  }
+
+  .news-events img {
+    width: 340px;
+    height: 360px;
+  }
+
+  .news-events .i-news img {
+    width: 180px;
+    height: 300px;
+  }
+
+  .contact-us,
+  .contact-content,
+  .vm-container,
+  .core-values,
+  .ec-container,
+  .hymn,
+  .hymn iframe {
+    display: grid;
+    grid-template-columns: auto;
+    width: 100vw;
+    font-size: 1em;
+  }
+
+  .core-values #cv-items {
+    display: grid;
+    grid-template-columns: auto;
+    width: 100%;
+    height: auto;
+    font-size: 1em;
+  }
+  .history {
+    font-size: 0.5em;
+    width: 100vw;
+  }
+
+  .facilities{
+    height: 100%;
+    position: relative;
+    color: #1434a4;
+  }
+  
+  .facilities h1{
+    font-size: 1em;
+  }
+  
+  .facilities-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 124px 8px 24px 8px;
+    gap: 16px;
+  }
+
+  .facilities-wrapper h1{
+    font-size: 2em;
+  }
+  
+  .facilities-content{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin: auto;
+    text-align: center;
+    gap: 32px;
+  }
+  
+  .facilities-content img{
+    height: 160px;
+    width: 240px;
+    border-radius: 25%;
+  }
+  
+  
+  .events-extra{
+    height: 100vh;
+    position: relative;
+  }
+  
+  .student-container{
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(2,1fr);
+    padding: 10px;
+    overflow: hidden;
+  }
+  
+  .item img{
+    max-width: 25%;
+    max-height: 25%;
+  }
+
+  .item h2{
+    font-size: 1em;
+  }
+
+  .item p{
+    font-size: 0.8em;
+  }
+
+  .news-cc2 img {
+    width: 100%;
+    height: 180px;
+    border: solid 2px #002d62;
+  }
+
+  .news-card{
+    margin-top: 24px;
+  }
+
+  .news-cc1  {
+    width: 100%;
+    height: 480px;
+  }
+
+  .single{
+    font-size: 1.2em;
+    width: 600px;
+    text-wrap: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  } 
+
+  #related-post{
+    height: 100%;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: center;
+  }
+
+  #related-post h1{
+    font-size: 1.5em;
+  }
+
+  .news-card-wrap{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+
+  .n-card{
+    width: 120px;
+    height: 140px;
+    font-size: 0.5em;
+  }
+
+  #news-page .swiper-pagination{
+    margin-bottom: 64px;
+  }
+
+  #news-page .swiper-pagination-bullet{
+    width: 32px;
+    position: initial;
+  }
+}
+
+
+@media (max-width: 320px) or (max-width: 480px) {
+  header {
+    padding: 10px 20px;
+    background-color: #0047ab;
+    z-index: 20;
+  }
+  header nav {
+    position: absolute;
+    width: 100%;
+    top: 66px;
+    left: 0px;
+    background-color: #0047ab;
+    display: none;
+    
+  }
+
+  header.active nav {
+    display: initial;
+  }
+  header nav ul li {
+    margin: auto;
+    width: 100%;
+  }
+  header nav ul li ul {
+    position: relative;
+    width: 100%;
+    left: 0;
+  }
+  header nav ul li ul li {
+    top: 0;
+    left: 0;
+  }
+  header nav ul li:hover ul li {
+    background-color: #0047ab;
+  }
+  .menuToggle {
+    position: relative;
+    width: 40px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .menuToggle::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    transform: translateY(-12px);
+    box-shadow: 0 12px #fff;
+  }
+  .menuToggle::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    transform: translateY(12px);
+  }
+  header.active .menuToggle::before {
+    transform: rotate(45deg);
+    box-shadow: 0 0 #fff;
+  }
+
+  header.active .menuToggle::after {
+    transform: rotate(315deg);
+  }
+
+  #home-extra {
+    display: none;
+  }
+
+  .h-container {
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 8px;
+  }
+
+  .h-container .h-title h1 {
+    font-size: 1.5em;
   }
 
   .h-card-wrap p {
@@ -1056,7 +1413,7 @@ hr {
 
   .hs-card-wrap {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: auto auto;
   }
 
   .hs-card-wrap p {
@@ -1064,9 +1421,27 @@ hr {
   }
 
   .h-card-wrap .cards li {
-    font-size: 0.5em;
+    font-size: 0.4em;
   }
 
+  .hsc-container .hsc-title h1{
+    font-size: 1em;
+  }
+
+  .h-card-wrap h1{
+  display: grid;
+  grid-template-columns: auto auto;
+  }
+
+  .h-card-wrap .nkpd, .h-card-wrap .stitle-color{
+    display: none;
+  }
+
+  .h-card-college{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 12px;
+  }
   .c-cards li {
     font-size: 0.5em;
   }
@@ -1117,6 +1492,7 @@ hr {
     width: 24px;
     height: 16px;
   }
+
 
   #identity .why-choose h1 {
     font-size: 2.5em;
@@ -1175,10 +1551,6 @@ hr {
   .history {
     font-size: 0.5em;
     width: 100vw;
-  }
-
-  .hsc-container .hsc-title h1{
-    font-size: 1em;
   }
 
   .facilities{

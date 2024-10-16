@@ -16,6 +16,9 @@ var swiper = new Swiper(".mySwiper", {
       spaceBetween: 5
     }
   },
+  keyboard: {
+    enabled: true,
+  },
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
