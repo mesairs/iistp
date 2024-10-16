@@ -1421,7 +1421,7 @@ hr {
   }
 
   .h-card-wrap .cards li {
-    font-size: 0.4em;
+    font-size: 0.5em;
   }
 
   .hsc-container .hsc-title h1{
@@ -1440,10 +1440,12 @@ hr {
   .h-card-college{
     display: grid;
     grid-template-columns: auto auto auto;
-    column-gap: 12px;
+    column-gap: 8px;
   }
   .c-cards li {
     font-size: 0.5em;
+    width: 80px;
+    line-height: 10px;
   }
 
   .c-cards h3 {
