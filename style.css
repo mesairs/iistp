@@ -1539,8 +1539,8 @@ hr {
   .hymn iframe {
     display: grid;
     grid-template-columns: auto;
-    width: 100vw;
-    font-size: 1em;
+    width: 100%;
+    font-size: 0.8em;
   }
 
   .core-values #cv-items {
