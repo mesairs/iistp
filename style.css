@@ -2539,21 +2539,21 @@ hr {
   }
 
   .i-items h2 {
-    font-size: 0.8em;
+    font-size: 1em;
   }
 
   .i-items .btn2 p {
-    font-size: 0.4em;
+    font-size: 0.8em;
   }
 
   .news-events img {
-    width: 124px;
-    height: 92px;
+    width: 80vw;
+    height: 32vh;
   }
 
   .news-events .i-news img {
-    width: 64px;
-    height: 42px;
+    width: 30vw;
+    height: 20vh;
   }
 
   .contact-us,
@@ -2994,21 +2994,21 @@ hr {
   }
 
   .i-items h2 {
-    font-size: 0.8em;
+    font-size: 1.2em;
   }
 
   .i-items .btn2 p {
-    font-size: 0.4em;
+    font-size: 0.8em;
   }
 
   .news-events img {
-    width: 124px;
-    height: 92px;
+    width: 80vw;
+    height: 20vh;
   }
 
   .news-events .i-news img {
-    width: 64px;
-    height: 42px;
+    width: 30vw;
+    height: 120px;
   }
 
   .contact-us,
