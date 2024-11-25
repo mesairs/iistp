@@ -680,12 +680,14 @@ span.title-color {
 .news-cc1 img {
   width: 100%;
   height: 90%;
+  object-fit: fill;
   border: solid 2px #002d62;
 }
 
 .news-cc2 img {
   width: 360px;
   height: 260px;
+  object-fit: fill;
   border: solid 2px #002d62;
 }
 
@@ -1051,74 +1053,7 @@ hr {
 }
 
 @media (min-width: 1367px) and (max-width: 1600px) {
-  header {
-    padding: 10px 20px;
-    background-color: #0047ab;
-    z-index: 20;
-  }
-  header nav {
-    position: absolute;
-    width: 100%;
-    top: 66px;
-    left: 0px;
-    background-color: #0047ab;
-    display: none;
-  }
-
-  header.active nav {
-    display: initial;
-  }
-  header nav ul li {
-    margin: auto;
-    width: 100%;
-  }
-  header nav ul li ul {
-    position: relative;
-    width: 100%;
-    left: 0;
-  }
-  header nav ul li ul li {
-    top: 0;
-    left: 0;
-  }
-  header nav ul li:hover ul li {
-    background-color: #0047ab;
-  }
-  .menuToggle {
-    position: relative;
-    width: 40px;
-    height: 50px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .menuToggle::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 3px;
-    background: #fff;
-    transform: translateY(-12px);
-    box-shadow: 0 12px #fff;
-  }
-  .menuToggle::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 3px;
-    background: #fff;
-    transform: translateY(12px);
-  }
-  header.active .menuToggle::before {
-    transform: rotate(45deg);
-    box-shadow: 0 0 #fff;
-  }
-
-  header.active .menuToggle::after {
-    transform: rotate(315deg);
-  }
-
+  
   #home-extra {
     display: none;
   }
@@ -1344,18 +1279,14 @@ hr {
   }
 
   .news-cc2 img {
-    width: 36vw;
-    height: 180px;
+    width: 100%;
+    height: 220px;
     border: solid 2px #002d62;
-  }
-
-  .news-card {
-    margin-top: 24px;
   }
 
   .news-cc1 {
     width: 50vw;
-    height: 50vh;
+    height: 60vh;
   }
 
   .single {
@@ -1363,14 +1294,14 @@ hr {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    width: 360px;
+    width: 740px;
   }
 
   .double {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    width: 240px;
+    width: 420px;
   }
   #related-post {
     height: 100%;
@@ -1394,8 +1325,8 @@ hr {
   }
 
   .n-card {
-    width: 120px;
-    height: 140px;
+    width: 320px;
+    height: 220px;
     font-size: 0.5em;
   }
 
@@ -1410,74 +1341,6 @@ hr {
 }
 
 @media (min-width: 1201px) and (max-width: 1366px) {
-  header {
-    padding: 10px 20px;
-    background-color: #0047ab;
-    z-index: 20;
-  }
-  header nav {
-    position: absolute;
-    width: 100%;
-    top: 66px;
-    left: 0px;
-    background-color: #0047ab;
-    display: none;
-  }
-
-  header.active nav {
-    display: initial;
-  }
-  header nav ul li {
-    margin: auto;
-    width: 100%;
-  }
-  header nav ul li ul {
-    position: relative;
-    width: 100%;
-    left: 0;
-  }
-  header nav ul li ul li {
-    top: 0;
-    left: 0;
-  }
-  header nav ul li:hover ul li {
-    background-color: #0047ab;
-  }
-  .menuToggle {
-    position: relative;
-    width: 40px;
-    height: 50px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .menuToggle::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 3px;
-    background: #fff;
-    transform: translateY(-12px);
-    box-shadow: 0 12px #fff;
-  }
-  .menuToggle::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 3px;
-    background: #fff;
-    transform: translateY(12px);
-  }
-  header.active .menuToggle::before {
-    transform: rotate(45deg);
-    box-shadow: 0 0 #fff;
-  }
-
-  header.active .menuToggle::after {
-    transform: rotate(315deg);
-  }
-
   #home-extra {
     display: none;
   }
@@ -1704,7 +1567,8 @@ hr {
 
   .news-cc2 img {
     width: 36vw;
-    height: 180px;
+    height: 240px;
+    object-fit: fill;
     border: solid 2px #002d62;
   }
 
@@ -1714,7 +1578,7 @@ hr {
 
   .news-cc1 {
     width: 50vw;
-    height: 50vh;
+    height: 70vh;
   }
 
   .single {
@@ -1722,14 +1586,14 @@ hr {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    width: 360px;
+    width: 600px;
   }
 
   .double {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    width: 240px;
+    width: 440px;
   }
   #related-post {
     height: 100%;
@@ -1753,8 +1617,8 @@ hr {
   }
 
   .n-card {
-    width: 120px;
-    height: 140px;
+    width: 240px;
+    height: 180px;
     font-size: 0.5em;
   }
 
@@ -2786,7 +2650,8 @@ hr {
 
   .news-cc2 img {
     width: 36vw;
-    height: 180px;
+    height: 160px;
+    object-fit: fill;
     border: solid 2px #002d62;
   }
 
@@ -2799,8 +2664,8 @@ hr {
     height: 50vh;
   }
 
-  .fb-content {
-    display: none;
+ .fb-page{
+    width: 100vw;
   }
 
   .single {
@@ -2808,14 +2673,14 @@ hr {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    width: 260px;
+    width: 220px;
   }
 
   .double {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    width: 180px;
+    width: 160px;
   }
 
   #related-post {
@@ -3240,7 +3105,8 @@ hr {
 
   .news-cc2 img {
     width: 36vw;
-    height: 180px;
+    height: 160px;
+    object-fit: fill;
     border: solid 2px #002d62;
   }
 
@@ -3250,7 +3116,11 @@ hr {
 
   .news-cc1 {
     width: 50vw;
-    height: 50vh;
+    height: 40vh;
+  }
+
+  .news-cc1 img{
+    object-fit: fill;
   }
 
   .fb-content {
@@ -3267,14 +3137,14 @@ hr {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    width: 200px;
+    width: 160px;
   }
 
   .double {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    width: 160px;
+    width: 120px;
   }
 
   #related-post {
