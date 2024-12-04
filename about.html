@@ -5,23 +5,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="javas.js" defer></script>
-    <title>About</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>IIST About</title>
+    <link rel="stylesheet" href="res/style.css">
+    <link rel="icon" href="res/images/logo.png" type="images/icon type" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <a href="https://mesairs.github.io/tempWeb/" class="logo"><img src="images/logo.png"></a>
+        <a href="https://mesairs.github.io/tempWeb/" class="logo"><img src="res/images/logo.png">
+            <h2>Imus Institute of Science and Technology</h2>
+        </a>
         <div class="menuToggle"> </div>
         <nav>
             <ul>
                 <li><a href="https://mesairs.github.io/tempWeb/">Home</a></li>
-                <li><a href="academics.html">Academics</a></li>
-                <li><a href="campus.html">Campus and Facilities</a></li>
-                <li><a href="news.html">News</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="about.html">About<b>&#9662;</b></a>
+                    <ul>
+                        <li><a href="">News</a></li>
+                        <li><a href="#">Tuition</a></li>
+                        <li><a href="facilities.html">Facilities</a></li>
+                        <li><a href="#">Student Orgs</a></li>
+                    </ul>
+                </li>
+                <li><a href="academics.html">Academics</a> </li>
             </ul>
         </nav>
     </header>
@@ -302,38 +309,14 @@
         </div>
     </div>
 </section>
-<div class="footer">
-    <div class="footer-title">
-        <img src="images/logo.png" alt="">
-        <h2>Imus Institute of Science and Technology</h2>
-    </div>
 
-    <div class="horizontal-line"></div>
-
-    <div class="f-contact-us">
-        <h3>Connect with us</h1>
-    </div>
-
-    <div class="f-container">
-        <div>
-            <!--<h2>Contact Us</h2>-->
-            <p><img src="images/home.svg" /> 82 Nueno Ave, Imus, 4103 Cavite</p>
-            <p><img src="images/mail.svg" /> iistedu2020@gmail.com</p>
-            <p><img src="images/telephone.svg" /> (046) 471 8092</p>
-        </div>
-
-        <div class="contact-links">
-            <!--<h2>IIST Socials</h2>-->
-            <p><a href="https://www.facebook.com/ImusInstituteInc"><img src="images/facebook.svg" />Imus
-                    Institute Inc.</a></p>
-            <p><a href="#contact-directory"><img src="images/list.svg" />School Contacts Directory</a></p>
-        </div>
-    </div>
-
-    <div class="copyright-section">
-        <h3>Copyright © 2024 Imus Institute of Science and Technology. All rights reserved.</h3>
-    </div>
-</div>
+<script>
+    let menuToggle = document.querySelector('.menuToggle');
+    let header = document.querySelector('header');
+    menuToggle.onclick = function () {
+        header.classList.toggle('active');
+    }
+</script>
 </body>
 
 </html>

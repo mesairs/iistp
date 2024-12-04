@@ -3,353 +3,315 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
-    <script src="javas.js" defer></script>
-    <title>Academics</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>IIST Academics</title>
+    <link rel="stylesheet" href="res/style.css">
+    <link rel="icon" href="res/images/logo.png" type="images/icon type" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <a href="https://mesairs.github.io/tempWeb/" class="logo"><img src="images/logo.png"></a>
+        <a href="https://mesairs.github.io/tempWeb/" class="logo"><img src="res/images/logo.png">
+            <h2>Imus Institute of Science and Technology</h2>
+        </a>
         <div class="menuToggle"> </div>
         <nav>
             <ul>
                 <li><a href="https://mesairs.github.io/tempWeb/">Home</a></li>
-                <li><a href="academics.html">Academics</a></li>
-                <li><a href="campus.html">Campus and Facilities</a></li>
-                <li><a href="news.html">News</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="about.html">About<b>&#9662;</b></a>
+                    <ul>
+                        <li><a href="">News</a></li>
+                        <li><a href="#">Tuition</a></li>
+                        <li><a href="facilities.html">Facilities</a></li>
+                        <li><a href="#">Student Orgs</a></li>
+                    </ul>
+                </li>
+                <li><a href="academics.html">Academics</a> </li>
             </ul>
         </nav>
     </header>
-    <!-- hero -->
-     <section>
-    <img class="bg" src="images/bg.jpg">
-    <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
+    <section class="intro-placeholder">
+        <h1>Academics</h1>
+        <p>Check our offered programs, requirements, and colleges</p>
+    </section>
 
-            <div class="swiper-slide">
-                <div class="h-container">
-                    <div class="h-title">
-                        <h1><span class="title-color">K</span> |Kindergarten</h1>
-                    </div>
-                    <div class="h-card-wrap">
-                        <div class="cards">
-                            <h1><span class="nkpd">Kinder - 1</span></h1>
-                            <p> The curriculum builds upon the foundational skills introduced in Nursery and prepares
-                                children for formal schooling.
-                                Activities are structured to promote independent learning, problem-solving, creativity,
-                                and collaboration.
-                            </p>
-                        </div>
+    <section class="program-wrapper">
+        <div id="program-page">
+            <h1>Progams Offered</h1>
+        </div>
+        <div class="program-cards-container">
+            <div class="programs-left">
+                <div class="program-content-cards">
+                    <h3>Kindergarten</h3>
+                </div>
 
-                        <div class="cards">
-                            <h1><span class="nkpd">Kinder - 2</span></h1>
-                            <p>The curriculum is designed to further develop academic readiness skills, including
-                                reading, writing, mathematics, and science,
-                                while continuing to foster social-emotional growth and independence.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="btn">
-                        <p>Want to enroll now? Click here</p>
-                        <a class="blue" href="https://iist.edu.ph/registrar/howtoenroll/nkp/">
-                            <h1>HOW TO ENROLL</h1>
-                        </a>
-                    </div>
+                <div class="program-content-cards">
+                    <h3>Elementary</h3>
+                </div>
+
+            </div>
+            <div class="programs-center">
+                <div class="program-content-cards">
+                    <h3>Junior Highschool</h3>
+                </div>
+
+                <div class="program-content-cards">
+                    <h3>Senior Highschool</h3>
                 </div>
             </div>
-
-            <div class="swiper-slide">
-                <div class="h-container">
-                    <div class="h-title">
-                        <h1><span class="title-color">E </span> | ELEMENTARY</h1>
-                    </div>
-                   
-                    <div class="h-card-wrap">
-                        <div class="cards">
-                            <p>Our Elementary School Program is designed to provide a comprehensive and engaging
-                                educational
-                                experience for young learners. This program aims to foster a love for learning through
-                                fun,
-                                hands-on activities and a supportive learning environment. By introducing fundamental
-                                concepts
-                                across various subjects in an accessible and engaging manner, we help students build a
-                                strong foundation
-                                for future academic success. Students will explore a range of topics, developing
-                                critical thinking, problem-solving skills,
-                                and a lifelong curiosity about the world around them.
-                            </p>
-                        </div>
-
-                    </div>
-                    <div class="btn">
-                        <p>Want to enroll now? Click here</p>
-                        <a class="blue" href="https://iist.edu.ph/registrar/howtoenroll/elementary/">
-                            <h1>HOW TO ENROLL</h1>
-                        </a>
-                    </div>
+            <div class="programs-right">
+                <div class="program-content-cards">
+                    <h3>College</h3>
                 </div>
-            </div>
 
-            <div class="swiper-slide">
-                <div class="h-container">
-                    <div class="h-title">
-                        <h1><span class="title-color">JHS</span> | JUNIOR HIGH SCHOOL</h1>
-                    </div>
-                    <div class="h-card-wrap">
-                        <div class="cards">
-                            <h1>Business High School</h1>
-
-                            <p> The Regular/Business High School complies with the Basic Education Curriculum (BEC)
-                                prescribed by Department of
-                                Education. One of the basic features of this curriculum is the intergration of
-                                Information Technology in different
-                                learning areas. Entrepreneurship focused on livelihood prgrams is also included. The
-                                core values, philosophy; "Sciencia et Virtus",
-                                and the mission and vision are integrated in all areas of learning.
-                            </p>
-                        </div>
-
-                    </div>
-                    <div class="btn">
-                        <p>Want to enroll now? Click here</p>
-                        <a class="blue" href="https://iist.edu.ph/registrar/howtoenroll/jhs/">
-                            <h1>HOW TO ENROLL</h1>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="swiper-slide">
-                <div class="h-container">
-                    <div class="h-title">
-                        <h1><span class="title-color">SHS</span> | SENIOR HIGH SCHOOL</h1>
-                    </div>
-                    <div class="hs-card-wrap">
-                        <div class="cards">
-                            <h1>ABM</h1>
-                            <p> ABM is the short term for Accountancy, Business and Management.
-                                The Accountancy, Business and Management (ABM) strand would focus on the basic concepts
-                                of financial management,
-                                business management, corporate operations, and all things that are accounted for
-                            </p>
-                        </div>
-
-                        <div class="cards">
-                            <h1>STEM</h1>
-                            <p> The STEM strand in Senior High School is designed for students who aspire to pursue a
-                                career in fields
-                                related to Science, Technology, Engineering, and Mathematics. This strand offers a
-                                robust curriculum that
-                                develops analytical skills, critical thinking, and practical problem-solving abilities.
-                            </p>
-                        </div>
-
-                        <div class="cards">
-                            <h1>HUMSS</h1>
-                            <p>Humanities and Social Sciences Track. This strand is for learners who aim to take up
-                                journalism,
-                                communication arts, liberal arts, education and other social science related courses in
-                                college.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="btn">
-                        <p>Want to enroll now? Click here</p>
-                        <a class="blue" href="https://iist.edu.ph/registrar/howtoenroll/shs/">
-                            <h1>HOW TO ENROLL</h1>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="swiper-slide">
-                <div class="h-container">
-                    <div class="h-title">
-                        <h1><span class="title-color">MBA</span> | Master in Business Administration</h1>
-                    </div>
-                  
-                    <div class="h-card-wrap">
-                        <div class="cards">
-                            <p>The Master of Business Administration (MBA) program provides a comprehensive
-                                understanding of business management principles,
-                                practices, and strategies. Designed for individuals seeking to advance their careers in
-                                various sectors, this program equips
-                                students with the knowledge and skills necessary to excel in leadership roles within
-                                organizations.MBA is a versatile and prestigious degree that provides comprehensive training in business management, leadership, 
-                                and strategic thinking, making it a valuable asset for professionals aiming to advance their careers in the business world.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="btn">
-                        <p>Want to enroll now? Click here</p>
-                        <a class="blue" href="https://iist.edu.ph/registrar/howtoenroll/postgrad/">
-                            <h1>HOW TO ENROLL</h1>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="swiper-slide">
-                <div class="h-container">
-                    <div class="h-title">
-                        <h1><span class="title-color">LSDC</span> | Life Skills Development Center</h1>
-                    </div>
-                    <div class="h-card-wrap">
-                        <div class="cards">
-                           <ul>
-                            <li>Automotive Servicing NC I</li>
-                            <li>Automotive Servicing NC II</li>
-                            <li>Mechatronics Servicing NC II</li>
-                            <li>Electronic Products Assembly and Servicing NC II</li>
-                           </ul>
-                        </div>
-
-                        <div class="cards">
-                            <ul>
-                            <li>Bartending NC II</li>
-                            <li>Cookery NC II</li>
-                            <li>Bread and Pastry Production NC II</li>
-                            <li>Food and Beverage Services NC II</li>
-                            <li>Ships's Catering Services NC I</li>
-                            </ul>
-                         </div>
-
-                         <div class="cards">
-                            <ul>
-                             <li>Housekeeping NC II</li>
-                             <li>Bookkeeping NC III</li>
-                             <li>Contact Center Services NC II</li>
-                             <li>English Language Proficiency</li>
-                            </ul>
-                         </div>
-                    </div>
-                    <div class="btn">
-                        <p>Want to enroll now? Click here</p>
-                        <a class="blue" href="https://iist.edu.ph/registrar/howtoenroll/college/">
-                            <h1>HOW TO ENROLL</h1>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="swiper-slide">
-                <div class="h-container">
-                    <div class="h-title">
-                        <h1><span class="title-color">C</span> | COLLEGE</h1>
-                    </div>
-                
-                    <div class="h-card-college">
-                    <div class="c-cards">
-                        <h3><span class="title-color">CBA</span> | College of Business Administration</h3>
-                        <ul>
-                        
-                        </ul>
-                        <br>
-                        <h3><span class="title-color">COA</span> | College of Accountancy</h3>
-                        <ul>
-                         <li>Bachelor of Science in Accountancy</li>
-                        </ul>
-                        <br>
-                        <h3><span class="title-color">CCS</span> | College of Computer Studies</h3>
-                        <ul>
-                         <li>Bachelor of Science in Computer Science</li>
-                         <li>Bachelor of Science in Information Technology</li>
-                        </ul>
-                     </div>
-
-                   
-
-                     <div class="c-cards">
-                        <h3><span class="title-color">COE</span> | College of Engineering</h3>
-                            <ul>
-                             <li>Bachelor of Science in Computer Engineering</li>
-                             <li>Bachelor of Science in Electronics Engineering</li>
-                            </ul>
-                        <br>
-                        <h3><span class="title-color">CHTM</span> | College of College of Hospitality and Tourism Management</h3>
-                        <ul>
-                         <li>Bachelor of Science in Hospitality Management</li>
-                         <li>Bachelor of Science in Tourism Management</li>
-                        </ul>
-                            <br>
-                            <h3><span class="title-color">COSW</span>| College of Social Work</h3>
-                            <ul>
-                             <li>Bachelor of Science in Social Work</li>
-                            </ul>
-                     </div>
-
-                     <div class="c-cards">
-                        <h3><span class="title-color">CEAS</span> | College of Education, Arts and Sciences</h3>
-                        <ul>
-                         <li>Bachelor of Elementary Education</li>
-                         <li>Bachelor of Secondary Education Major in English</li>
-                         <li>Bachelor of Secondary Education Major in Filipino</li>
-                         <li>Bachelor of Secondary Education Major in Mathematics</li>
-                         <li>Bachelor of Secondary Education Major in Science</li>
-                         <li>Bachelor of Secondary Education Major in Social Studies</li>
-                         <li>Bachelor Of Secondary Education Major in Values Education</li>
-                         <li>Bachelor of Arts in Communication</li>
-                         <li>Teachers Certificate Program</li>
-                        </ul>
-                     </div>
-
-                    </div>
-
-                    <div class="btn">
-                        <p>Want to enroll now? Click here</p>
-                        <a class="blue" href="https://iist.edu.ph/registrar/howtoenroll/college/">
-                            <h1>HOW TO ENROLL</h1>
-                        </a>
-                    </div>
-                </div>
+                <div class="program-content-cards">
+                    <h3>Graduate Studies</h3>
                 </div>
             </div>
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-    </div>
-</section>
 
-<div class="footer">
-    <div class="footer-title">
-        <img src="images/logo.png" alt="">
-        <h2>Imus Institute of Science and Technology</h2>
-    </div>
-
-    <div class="horizontal-line"></div>
-
-    <div class="f-contact-us">
-        <h3>Connect with us</h1>
-    </div>
-
-    <div class="f-container">
-        <div>
-            <!--<h2>Contact Us</h2>-->
-            <p><img src="images/home.svg" /> 82 Nueno Ave, Imus, 4103 Cavite</p>
-            <p><img src="images/mail.svg" /> iistedu2020@gmail.com</p>
-            <p><img src="images/telephone.svg" /> (046) 471 8092</p>
+        <div id="program-page-title">
+            <h1>Requirements</h1>
         </div>
 
-        <div class="contact-links">
-            <!--<h2>IIST Socials</h2>-->
-            <p><a href="https://www.facebook.com/ImusInstituteInc"><img src="images/facebook.svg" />Imus
-                    Institute Inc.</a></p>
-            <p><a href="#contact-directory"><img src="images/list.svg" />School Contacts Directory</a></p>
+        <div class="tab">
+            <button class="tablinks active" onclick="openPrograms(event, 'Kindergarten')">
+                <h3>Kindergarten</h3>
+            </button>
+            <button class="tablinks" onclick="openPrograms(event, 'Elementary')">
+                <h3>Elementary</h3>
+            </button>
+            <button class="tablinks" onclick="openPrograms(event, 'JuniorHigh')">
+                <h3>Junior Highschool</h3>
+            </button>
+            <button class="tablinks" onclick="openPrograms(event, 'SeniorHigh')">
+                <h3>Senior Highschool</h3>
+            </button>
+            <button class="tablinks" onclick="openPrograms(event, 'College')">
+                <h3>College</h3>
+            </button>
+            <button class="tablinks" onclick="openPrograms(event, 'GraduateStudies')">
+                <h3>Graduate Studies</h3>
+            </button>
         </div>
-    </div>
 
-    <div class="copyright-section">
-        <h3>Copyright © 2024 Imus Institute of Science and Technology. All rights reserved.</h3>
-    </div>
-</div>
+
+        <!-- Tab content -->
+        <div id="Kindergarten" class="tabcontent" style="display: inline-block;">
+            <h3>Requirements for Kinder:</h3>
+            <ul>
+                <li>Photocopy of PSA Birth Certificate</li>
+            </ul>
+            <h3>Requirements for Kinder 2 (Transferee)</h3>
+            <p>(5 years old - October 31):</p>
+            <ul>
+                <li>Photocopy of PSA Birth Certificate</li>
+                <li>Certificate of Completion (Kinder 1)</li>
+            </ul>
+        </div>
+
+        <div id="Elementary" class="tabcontent">
+            <h3>Requirements for Grade 1 (Transferee):</h3>
+            <ul>
+                <li>ECD Form</li>
+                <li>Photocopy of PSA Birth Certificate</li>
+                <li>Certificate of Completion (Kinder 2)</li>
+            </ul>
+            <h3>Requirements for Grade 2 to Grade 6 (Transferee):</h3>
+            <ul>
+                <li>Photocopy of PSA Birth Certificate</li>
+                <li>Report Card (Original)</li>
+            </ul>
+        </div>
+
+        <div id="JuniorHigh" class="tabcontent">
+            <h3>Requirements for Junior High School:</h3>
+            <ul>
+                <li>Photocopy of PSA Birth Certificate</li>
+                <li>Grade 6 Report Card (Original)</li>
+            </ul>
+            <h3>Requirements for Educational Service Contracting (ESC):</h3>
+            <ul>
+                <li>ESC Application Form provided by their Advisers</li>
+                <li>Recent Identical 2x2 I.D. Photo with white background (2 Copies)</li>
+                <li>Photocopy of PSA Birth Certificate</li>
+                <li>Grade 6 Report Card (Original)</li>
+                <li>Barangay Certificate
+                    <ul id="tab-nested-list">
+                        <li>Student's Full Name</li>
+                        <li>Parent's Name and Current Employment</li>
+                        <li>Monthly Income</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div id="SeniorHigh" class="tabcontent">
+            <h3>Requirements for Senior High School:</h3>
+            <ul>
+                <li>Report Card (Original)</li>
+                <li>Photocopy of PSA Birth Certificate</li>
+                <li>Certificate of Good Moral Character</li>
+                <li>2x2 I.D. Photo with white background (2 Copies)
+                    <ul>
+                        <h4>For SHS Voucher Recipient(From Private School)</h4>
+                        <li id="tab-nested-list">ESC/QVA Certificate</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div id="College" class="tabcontent">
+            <h3>Requirements for College (Freshmen):</h3>
+            <ul>
+                <li>Photocopy of PSA Birth Certificate</li>
+                <li>Certificate of Good Moral Character</li>
+                <li>Senior High School Report Card (Form 138)</li>
+                <li>Form 137 (Required after officially enrolled)</li>
+                <li>2x2 I.D. Photo with white background (2 Copies)</li>
+            </ul>
+            <h3>Requirements for College (Transferee):</h3>
+            <ul>
+                <li>Honorable Dismissal</li>
+                <li>Certificate of Good Moral Character</li>
+                <li>2x2 I.D. Photo with white background (2 Copies)</li>
+                <li>Transcript of Records or Certification of Grades for Evaluation</li>
+                <h3>Required after officially enrolled:</h3>
+                <li>Transcript of Records with Remarks (Original)
+                    <ul>
+                        *Copy for Imus Institute of Science and Technology, Inc.
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div id="GraduateStudies" class="tabcontent">
+            <h3>Requirements for Educational Units / Master in Business Administration:</h3>
+            <ul>
+                <li>Barangay Clearance</li>
+                <li>Honorable Dismissal</li>
+                <li>Photocopy of PSA Birth Certificate</li>
+                <li>Marriage Certificate (PSA) (If married female)</li>
+                <li>2x2 I.D. Photo with white background (2 Copies)</li>
+                <li>Transcript of Records or Certification of Grades for Evaluation (Original)</li>
+                <h3>Required after officially enrolled:</h3>
+                <li>Transcript of Records with Remarks (Original)
+                    <ul>
+                        *Copy for Imus Institute of Science and Technology, Inc.
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div id="program-page-title">
+            <h1 id="college-name">Colleges</h1>
+        </div>
+        <div class="college-cards-container">
+            <div class="college-card">
+                <a href="colleges/ca.html">
+                    <img src="res/images/ca.jpg">
+                    <div class="college-card-body">
+                        <h3>CA</h3>
+                        <p>College of Accountancy</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="college-card">
+                <a href="colleges/cba.html">
+                    <img src="res/images/cba.jpg">
+                    <div class="college-card-body">
+                        <h3>CBA</h3>
+                        <p>College of Business Administration</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="college-card">
+                <a href="colleges/ccs.html">
+                    <img src="res/images/ccs.jpg">
+                    <div class="college-card-body">
+                        <h3>CCS</h3>
+                        <p>College of Computer Studies</p>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="college-card">
+                <a href="colleges/ceas.html">
+                    <img src="res/images/ceas.jpg">
+                    <div class="college-card-body">
+                        <h3>CEAS</h3>
+                        <p>College of Education, Arts & Science</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="college-card">
+                <a href="colleges/coe.html">
+                    <img src="res/images/coe.jpg">
+                    <div class="college-card-body">
+                        <h3>COE</h3>
+                        <p>College of Engineering</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="college-card">
+                <a href="colleges/csw.html">
+                    <img src="res/images/csw.jpg">
+                    <div class="college-card-body">
+                        <h3>COSW</h3>
+                        <p>College of Social Work</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="college-card">
+                <a href="colleges/chtm.html">
+                    <img src="res/images/chtm.jpg">
+                    <div class="college-card-body">
+                        <h3>CHTM</h3>
+                        <p>College of Hospitality & Tourism Management</p>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+
+
+    </section>
+    <script>
+        function openPrograms(evt, programName) {
+            // Declare all variables
+            var i, tabcontent, tablinks;
+
+            // Get all elements with class="tabcontent" and hide them
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Get all elements with class="tablinks" and remove the class "active"
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            // Show the current tab, and add an "active" class to the button that opened the tab
+            document.getElementById(programName).style.display = "grid";
+            evt.currentTarget.className += " active";
+        } 
+    </script>
+    <script>
+        let menuToggle = document.querySelector('.menuToggle');
+        let header = document.querySelector('header');
+        menuToggle.onclick = function () {
+            header.classList.toggle('active');
+        }
+    </script>
 </body>
+
 </html>
