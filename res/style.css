@@ -5,6 +5,11 @@
   font-family: "Poppins", sans-serif;
 }
 
+@font-face {
+  font-family: Old;
+  src: url(./OLD.woff);
+}
+
 a{
   color: #fff;
   text-decoration: none;
@@ -38,6 +43,9 @@ header .logo img{
   padding: 5px 12px 0px 12px;
 }
 
+header a h2{
+  font-family: old;
+}
 header ul{
 position: relative;
 }
@@ -87,6 +95,112 @@ header ul li ul li{
   background-position: center;
 }
 
+/* home page */
+/* home-page - welcome-section */
+.welcome-wrapper{
+  height: 95vh;
+  display: grid;
+  grid-template-columns: auto auto;
+  text-align: center;
+  align-items: center;
+  padding: 96px;
+  background-image: linear-gradient(rgba(9,5,54,0.3),rgba(5,4,46,0.7)),
+  url("../res/images/bg.jpg");
+}
+
+
+.welcome-text div h1{
+  font-family: old;
+  font-size: 3em;
+}
+
+#w-text-container{
+  margin-top: 24px;
+}
+
+.welcome-video video{
+  width: 80%;
+  height: auto;
+  border: 2px solid #0066b2;
+  border-radius: 4px;
+}
+
+.buttons-container{
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  margin: auto;
+  justify-content: center;
+  transition: transform .2s;
+}
+
+.buttons-container .btn{
+  text-align: center;
+  font-size: 2em;
+  color: #fff;
+  background-color: #0F52BA;
+  padding: 13px 35px;
+  width: auto;
+  height: auto;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  margin-top: 24px;
+}
+
+.buttons-container .btn:hover{
+  cursor: pointer;
+  transform: scale(1.02);
+}
+
+
+/* school info wrapper */
+.school-info-wrapper{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 96px;
+  height: auto;
+  background-color: #002387;
+  color: #fff;
+
+}
+
+.school-info-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: auto;
+  align-content: center;
+  text-align: center;
+  gap: 48px;
+}
+
+.school-info-intro{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 2em;
+  margin: 24px;
+}
+
+.school-card-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: auto;
+  gap: 24px;
+}
+
+.school-card{
+  background-color: #0F52BA;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  width: 240px;
+  height: 120px;
+  padding: 12px;
+  margin: 8px;
+  text-align: center;
+  font-size: 1.5em;
+  align-content: center;
+}
 /* academics page */
 .program-wrapper {
   display: grid;
@@ -651,7 +765,7 @@ img.hover-shadow {
 }
 
 
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 324px) and (max-width: 484px) {
   header {
     padding: 10px 20px;
     background-color: #0047ab;
@@ -664,6 +778,10 @@ img.hover-shadow {
     left: 0px;
     background-color: #0047ab;
     display: none;
+  }
+
+  header a h2{
+    font-size: 1em;
   }
 
   header.active nav {
@@ -718,5 +836,41 @@ img.hover-shadow {
 
   header.active .menuToggle::after {
     transform: rotate(315deg);
+  }
+
+  .welcome-wrapper{
+    height: 50%;
+    display: grid;
+    grid-template-columns: auto;
+    text-align: center;
+    padding: 64px;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .welcome-text div h1{
+    font-size: 1.5em;
+  }
+
+  .school-info-wrapper{
+    width: 100%;
+    padding: 24px;
+  }
+
+  .school-info-intro div h1{
+    font-size: 1em;
+  }
+
+  .school-info-container{
+    display: grid;
+    margin: auto;
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .school-card{
+    width: 120px;
+    height: auto;
+    font-size: 1em;
   }
 }
