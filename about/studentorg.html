@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IIST Student Organizations</title>
+    <link rel="stylesheet" href="../res/style.css">
+    <link rel="icon" href="../res/images/logo.png" type="images/icon type" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="https://mesairs.github.io/tempWeb/" class="logo"><img src="../res/images/logo.png">
+            <h2>Imus Institute of Science and Technology</h2>
+        </a>
+        <div class="menuToggle"> </div>
+        <nav>
+            <ul>
+                <li><a href="https://mesairs.github.io/tempWeb/">Home</a></li>
+                <li><a href="../about.html">About<b>&#9662;</b></a>
+                    <ul>
+                        <li><a href="">News</a></li>
+                        <li><a href="#">Tuition</a></li>
+                        <li><a href="facilities.html">Facilities</a></li>
+                        <li><a href="../about/studentorg.html">Student Orgs</a></li>
+                    </ul>
+                </li>
+                <li><a href="../academics.html">Academics</a> </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="intro-placeholder">
+        <h1>Student Organizations</h1>
+        <p>Organizations to choose from</p>
+    </section>
+
+
+    <div class="stud-orgs-container">
+        <a href="https://www.facebook.com/aces.iist">
+            <div class="so-item">
+                <img src="../res/images/aces.jpg" alt="">
+                <h2>ACES</h2>
+                <p>Association of Computer Studies and Engineering Students</p>
+            </div>
+        </a>
+
+        <a href="https://www.facebook.com/CEAIIST/">
+            <div class="so-item">
+                <img src="../res/images/cea.jpg" alt="">
+                <h2>CEA</h2>
+                <p>Communicators and Educators Association</p>
+            </div>
+        </a>
+
+        <a href="https://www.facebook.com/profile.php?id=61551460457511">
+            <div class="so-item">
+                <img src="../res/images/flare.jpg" alt="">
+                <h2>FLARE</h2>
+                <p>Future Leaders in Administration, Resources and Entrepreneurship</p>
+            </div>
+        </a>
+
+        <a href="https://www.facebook.com/iistcsg">
+            <div class="so-item">
+                <img src="../res/images/csg.jpg" alt="">
+                <h2>IIST CSG</h2>
+                <p>IIST Central Student Government</p>
+            </div>
+        </a>
+
+        <a href="https://www.facebook.com/jpia.iist">
+            <div class="so-item">
+
+                <img src="../res/images/jpia.jpg" alt="">
+                <h2>JPIA</h2>
+                <p>Junior Philippine Institute of Accountants</p>
+            </div>
+        </a>
+
+        <a href="https://www.facebook.com/smharttsiist/">
+            <div class="so-item">
+                <img src="../res/images/smhartts.jpg" alt="">
+                <h2>SMHARTTS</h2>
+                <p>Students of Management in Hotel & Restaurant, Travel, and Tourism Society</p>
+            </div>
+        </a>
+    </div>
+
+    <script>
+        let menuToggle = document.querySelector('.menuToggle');
+        let header = document.querySelector('header');
+        menuToggle.onclick = function () {
+            header.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
