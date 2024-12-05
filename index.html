@@ -9,7 +9,6 @@
     <link rel="icon" href="res/images/logo.png" type="images/icon type" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
@@ -37,44 +36,109 @@
             </ul>
         </nav>
     </header>
-   
-    <section class="py-16 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-extrabold text-center text-blue-600 mb-12">School Facts</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
-                <!-- Fact 1 -->
-                <div class="p-6 bg-gray-50 rounded-lg shadow-md">
-                    <h3 class="text-4xl font-bold text-blue-600">
-                        <span class="number">5000</span>+
-                    </h3>
-                    <p class="mt-2 text-lg font-medium text-gray-700">Graduates</p>
+    <div class="homepage-container">
+        <!-- welcome-section -->
+        <div class="welcome-wrapper">
+            <div class="welcome-text">
+                <div id="w-text-container">
+                    <h1>Imus Institute of</h1>
+                    <h1>Science and Technology</h1>
                 </div>
-                <!-- Fact 2 -->
-                <div class="p-6 bg-gray-50 rounded-lg shadow-md">
-                    <h3 class="text-4xl font-bold text-blue-600">
-                        <span class="number">100</span>+
-                    </h3>
-                    <p class="mt-2 text-lg font-medium text-gray-700">Years in Service</p>
-                </div>
-                <!-- Fact 3 -->
-                <div class="p-6 bg-gray-50 rounded-lg shadow-md">
-                    <h3 class="text-4xl font-bold text-blue-600">
-                        <span class="number">1000</span>+
-                    </h3>
-                    <p class="mt-2 text-lg font-medium text-gray-700">Enrollees</p>
-                </div>
-                <!-- Fact 4 -->
-                <div class="p-6 bg-gray-50 rounded-lg shadow-md">
-                    <h3 class="text-4xl font-bold text-blue-600">
-                        <span>₱ </span><span class="number">5000 </span>
-                    </h3>
-                    <p class="mt-2 text-lg font-medium text-gray-700"> Initial Enrollment Fee</p>
+            </div>
+
+            <div class="welcome-video">
+                <video controls>
+                    <source src="./res/images/vid.mp4" type="video/mp4">
+                </video>
+                <div class="buttons-container">
+                    <div class="btn">
+                        <a href="#">About Us</a>
+                    </div>
+
+                    <div class="btn">
+                        <a href="#">College</a>
+                    </div>
+
+                    <div class="btn">
+                        <a href="#">Facilities</a>
+                    </div>
+
+                    <div class="btn">
+                        <a href="#">News</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
+        
+        <!-- school-stats -->
+        <div class="school-info-wrapper">
+            <div class="school-info-container">
+                <div class="school-info-intro">
+                    <div>
+                        <h1>A Century of</h1>
+                    </div>
+                    <div>
+                        <h1>Academic excellence</h1>
+                    </div>
+                </div>
+                <div class="school-card-container" id="counter">
+                    <div class="school-card">
+                        <h3><span class="counter-value" data-count="5000">0</span>+</h3>
+                        <p>Graduates</p>
+                    </div>
+                    <div class="school-card">
+                        <h3><span class="counter-value" data-count="100">0</span>+</h3>
+                        <p>Years In Service</p>
+                    </div>
+                    <div class="school-card">
+                        <h3><span class="counter-value" data-count="1000">0</span>+</h3>
+                        <p>Enrollees</p>
+                    </div>
+                    <div class="school-card">
+                        <h3>₱<span class="counter-value" data-count="5000">0</span>+</h3>
+                        <p>Initial Enroll Fee</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script>
-        $(".number").counterUp({ time: 3000 });
+       var runAlready;
+var counting;
+
+function startCounter(a) {
+  runAlready = true;
+  counting = true;
+  $('.counter-value').each(function() {
+    var $this = $(this);
+    $this.text(a);
+    countTo = $this.attr('data-count');
+    $({
+      countNum: $this.text()
+    }).animate({
+      countNum: countTo
+    }, 
+    {
+      duration: 5000,
+      easing: 'swing',
+      step: function() {
+        $this.text(Math.floor(this.countNum));
+      },
+      complete: function() {
+        $this.text(this.countNum);
+        counting = false;
+      }
+    });
+  })
+}
+
+$(window).scroll(function() {
+  var oTop = $('#counter').offset().top;
+  var a = 0;
+  if (!runAlready && $(window).scrollTop() > oTop || !counting && $(window).scrollTop() < oTop) {
+    startCounter(a);
+  }
+});
     </script>
     <script>
         let menuToggle = document.querySelector('.menuToggle');
