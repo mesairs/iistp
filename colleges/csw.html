@@ -19,15 +19,15 @@
         <nav>
             <ul>
                 <li><a href="https://mesairs.github.io/tempWeb/">Home</a></li>
-                <li><a href="about.html">About<b>&#9662;</b></a>
+                <li><a href="../about.html">About<b>&#9662;</b></a>
                     <ul>
                         <li><a href="">News</a></li>
                         <li><a href="#">Tuition</a></li>
-                        <li><a href="facilities.html">Facilities</a></li>
-                        <li><a href="#">Student Orgs</a></li>
+                        <li><a href="../about/facilities.html">Facilities</a></li>
+                        <li><a href="../about/studentorg.html">Student Orgs</a></li>
                     </ul>
                 </li>
-                <li><a href="academics.html">Academics</a> </li>
+                <li><a href="../academics.html">Academics</a> </li>
             </ul>
         </nav>
     </header>
@@ -50,7 +50,8 @@
                     <li>Internalize the goals of social welfare and social work.</li>
                     <li>Knowledgeable of the concepts, the social welfare, social services, and social works.</li>
                     <li>Actual involvement in the development of the social work profession in the Philippines.</li>
-                    <li>Students knowledgeable of the historical perspectives; evolution of Social Welfare in Europe,US and, the Philippines.</li>
+                    <li>Students knowledgeable of the historical perspectives; evolution of Social Welfare in Europe,US
+                        and, the Philippines.</li>
                 </ol>
             </div>
 
@@ -72,11 +73,16 @@
                 </div>
             </div>
         </div>
-
         <div>
-
         </div>
     </section>
+    <script>
+        let menuToggle = document.querySelector('.menuToggle');
+        let header = document.querySelector('header');
+        menuToggle.onclick = function () {
+            header.classList.toggle('active');
+        }
+    </script>
 </body>
 
 </html>
