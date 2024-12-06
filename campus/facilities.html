@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IIST Facilities</title>
+    <link rel="stylesheet" href="../res/style.css">
+    <link rel="icon" href="../res/images/logo.png" type="images/icon type" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <a href="https://mesairs.github.io/tempWeb/" class="logo"><img src="../res/images/logo.png">
+            <h2>Imus Institute of Science and Technology</h2>
+        </a>
+        <div class="menuToggle"> </div>
+        <nav>
+            <ul>
+                <li><a href="https://mesairs.github.io/tempWeb/">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../academics.html">Academics</a> </li>
+                <li><a>Campus<b>&#9662;</b></a>
+                    <ul>
+                        <li><a href="">News</a></li>
+                        <li><a href="#">Tuition</a></li>
+                        <li><a href="../campus/facilities.html">Facilities</a></li>
+                        <li><a href="../campus/studentorg.html">Student Orgs</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="intro-placeholder">
+        <h1>Facilities</h1>
+        <p>To Cater to your needs, in knowledge and skills</p>
+    </section>
+
+
+    <div class="row-images">
+        <div class="column-images">
+            <img src="../res/images/avr.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+            <h3>AVR</h3>
+        </div>
+        <div class="column-images">
+            <img src="../res/images/bookstore.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+            <h3>Bookstore</h3>
+        </div>
+        <div class="column-images">
+            <img src="../res/images/canteen.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+            <h3>Canteen</h3>
+        </div>
+        <div class="column-images">
+            <img src="../res/images/classroom.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+            <h3>Classroom</h3>
+        </div>
+        <div class="column-images">
+            <img src="../res/images/collegelibrary.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+            <h3>College Library</h3>
+        </div>
+        <div class="column-images">
+            <img src="../res/images/computerlaboratory.jpg" onclick="openModal();currentSlide(6)"
+                class="hover-shadow cursor">
+            <h3>Computer Lab</h3>
+        </div>
+        <div class="column-images">
+            <img src="../res/images/gymn.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+            <h3>Gym</h3>
+        </div>
+        <div class="column-images">
+            <img src="../res/images/highschoollibrary.jpg" onclick="openModal();currentSlide(8)"
+                class="hover-shadow cursor">
+            <h3>HS Library</h3>
+        </div>
+    </div>
+
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+
+            <div class="mySlides">
+                <div class="numbertext">1 / 8</div>
+                <img src="../res/images/avr.jpg">
+                <p>Audio Visual Room</p>
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">2 / 8</div>
+                <img src="../res/images/bookstore.jpg">
+                <p>School Bookstore</p>
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3 / 8</div>
+                <img src="../res/images/canteen.jpg">
+                <p>School Canteen</p>
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">4 / 8</div>
+                <img src="../res/images/classroom.jpg">
+                <p>Classroom</p>
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">5 / 8</div>
+                <img src="../res/images/collegelibrary.jpg">
+                <p>College Library</p>
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">6 / 8</div>
+                <img src="../res/images/computerlaboratory.jpg">
+                <p>Computer Laboratory</p>
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">7 / 8</div>
+                <img src="../res/images/gymn.jpg">
+                <p>School Gym</p>
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">8 / 8</div>
+                <img src="../res/images/highschoollibrary.jpg">
+                <p>Highschool Library</p>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+
+        </div>
+    </div>
+
+    <script>
+        function openModal() {
+            document.getElementById("myModal").style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+    </script>
+    <script>
+        let menuToggle = document.querySelector('.menuToggle');
+        let header = document.querySelector('header');
+        menuToggle.onclick = function () {
+            header.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
