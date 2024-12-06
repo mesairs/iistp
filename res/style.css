@@ -846,7 +846,7 @@ img.hover-shadow {
     display: grid;
     grid-template-columns: auto;
     text-align: center;
-    padding: 48px 16px 28px 16px;
+    padding: 64px 16px 28px 16px;
     align-items: center;
     gap: 16px;
     width: 100%;
