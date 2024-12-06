@@ -33,6 +33,10 @@ header{
 
 }
 
+header nav{
+  padding-right: 12px;
+}
+
 header .logo{
   display: flex;
   align-items: center;
@@ -69,7 +73,7 @@ header ul li a:hover{
 header ul li ul{
   position: absolute;
   left: 0;
-  width: 200px;
+  width: 100%;
   background-color: #1434A4;    
   display: none;
 }
@@ -341,7 +345,7 @@ header ul li ul li{
 
 .college-cards-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(520px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   grid-gap: 0.5rem;
   padding: 0 8vw 0 8vw;
 }
@@ -378,7 +382,6 @@ column-gap: 10px;
 .courses-title .course-offered{
 display: flex;
 column-gap: 24px;
-
 }
 .course-container #program-objectives{
 width: fit-content;
@@ -707,7 +710,7 @@ img.hover-shadow {
 } 
 
 
- /* Student Organization */
+ /* student organization */
 #stud-orgs{
   background-color: #fff;
 }
@@ -765,7 +768,7 @@ img.hover-shadow {
 }
 
 
-@media (min-width: 324px) and (max-width: 484px) {
+@media (min-width: 320px) and (max-width: 480px) {
   header {
     padding: 10px 20px;
     background-color: #0047ab;
@@ -781,7 +784,7 @@ img.hover-shadow {
   }
 
   header a h2{
-    font-size: 1em;
+    font-size: 0.9em;
   }
 
   header.active nav {
@@ -843,13 +846,24 @@ img.hover-shadow {
     display: grid;
     grid-template-columns: auto;
     text-align: center;
-    padding: 64px;
+    padding: 48px 16px 28px 16px;
     align-items: center;
     gap: 16px;
+    width: 100%;
   }
 
   .welcome-text div h1{
-    font-size: 1.5em;
+    font-size: 1.4em;
+  }
+
+  .welcome-video video{
+    width: 100%;
+  }
+
+  .buttons-container .btn{
+text-align: center;
+font-size: 0.7em;
+padding: 2px;
   }
 
   .school-info-wrapper{
@@ -873,4 +887,182 @@ img.hover-shadow {
     height: auto;
     font-size: 1em;
   }
+
+/* about us page */
+  /* history */
+  .contact-us,
+  .contact-content,
+  .vm-container,
+  .core-values,
+  .ec-container,
+  .hymn,
+  .hymn iframe {
+    display: grid;
+    grid-template-columns: auto;
+    width: 80vw;
+    font-size: 0.8em;
+  }
+
+  .core-values #cv-items {
+    display: grid;
+    grid-template-columns: auto;
+    width: 100%;
+    height: auto;
+    font-size: 1em;
+  }
+  .history {
+    font-size: 0.8em;
+    text-align: justify;
+    width: 100%;
+  }
+
+  /* academics page */
+  .intro-placeholder{
+    font-size: 0.6em;
+    padding-top: 48px;
+  }
+
+  .program-wrapper{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+  }
+
+  .program-cards-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .programs-left, .programs-center, .programs-right{
+    display: flex;
+    flex-direction: row;
+    font-size: 0.5em;
+  }
+
+  .program-content-cards{
+    display: flex;
+    justify-content: center;
+    width: 140px;
+    height: 80px;
+    align-items: center;
+  }
+
+.tab{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin: auto;
+}
+  .tab button{
+    font-size: 0.4em;
+    width: 100px;
+  }
+
+  .tabcontent{
+    width: 75%;
+    font-size: 0.7em;
+  }
+
+  
+.college-card {
+  text-align: center;
+  height: auto;
+  width: 80vw;
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: #0F52BA;
+  transition: transform .2s;
+  margin: auto;
+  border: 2px solid #7CB9E8;
+}
+
+
+/* facilities page */
+.modal-content{
+  top: 180px;
+  margin: auto;
+
+  width: 80%;
+}
+
+.prev,
+.next {
+  top: 55%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(95, 95, 95, 0.8);
+}
+.mySlides img{
+  height: 100%;
+  width: 100%;
+}
+
+/* student organization */
+.stud-orgs-container{
+  grid-template-columns: 1fr;
+}
+
+.so-item{
+  font-size: 0.8em;
+  height: 260px;
+}
+
+
+/* college courses */
+
+.breadcrumbs-wrapper{
+  display: flex;
+  justify-content: start;
+  margin: 4px;
+  padding: 8px;
+  background-color: #0066b2;
+  border-radius: 8px;
+}
+
+.breadcrumbs-wrapper h3{
+  width: auto;
+  font-size: 0.9em;
+}
+
+.courses-title{
+  font-size: 0.6em;
+  width: 100%;
+  padding: 8px;
+
+}
+
+.courses-title .course-offered{
+  font-size: 0.8em;
+}
+
+#course-wrapper{
+  display: grid;
+  grid-template-columns: auto;
+  margin: auto;
+  text-align: left;
+  height: auto;
+  justify-content: center;
+  width: 100%;
+  border-top: 2px solid #fff;
+  padding: 24px;
+}
+
+#course-wrapper .course-container{
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: space-evenly;
+  width: auto;
+  gap: 12px;
+  font-size: 0.5em;
+}
+
+.career-card-wrapper{
+  display: grid;
+  grid-template-columns: auto auto;
+  width: auto;
+  gap: 12px;
+}
 }
