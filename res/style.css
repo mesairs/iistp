@@ -30,7 +30,7 @@ header{
   justify-content: space-between;
   align-items: center;
   border-bottom: 2px solid #fff;
-  z-index:20;
+  z-index: 20;
 }
 
 header nav{
@@ -563,6 +563,104 @@ hr {
   color: #000;
 }
 
+/* tuition-fee */
+.tablinkTF {
+  background-color: #0F52BA;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+}
+
+.tablinkTF:hover {
+  background-color: #17569a;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontentTF {
+  border: 1px solid #fff ;
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+#Gradeschool {background-color: #17569a;}
+#Juniorhighschool {background-color: #17569a;}
+#Seniorhighschool {background-color: #17569a;}
+#College {background-color: #17569a;}
+
+
+.tuitiontable-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+
+.tuitiontable-wrapper h3{
+  border: 2px solid #1034A6;
+  background-color: #002387;
+  width: fit-content;
+  border-radius: 4px;
+  margin: auto;
+  padding: 4px;
+}
+
+
+
+.tuitiontable-wrapper table, .tuitiontable-wrapper th, .tuitiontable-wrapper td{
+  border:2px solid #002387;
+  background-color: #0066b2;
+  margin: 8px;
+  width: 65vw;
+  align-items: center;
+}
+
+.tuitiontable-wrapper td{
+  padding: 2px;
+}
+
+.college-tuition-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+  align-content: center;
+  font-size: 1.5em;
+  margin: auto;
+  width: 80vw;
+}
+
+.college-tuition-wrapper h3, .college-tuition-wrapper h4{
+  border-bottom: 2px solid #fff;
+  margin: 8px;
+}
+
+.college-tuition-wrapper div ul li ul, .college-tuition-wrapper p{
+ margin-left: 16px;
+}
+
+
+.college-tuition-wrapper .college-tuition-container{
+  display: grid;
+  grid-template-columns: auto auto;
+  margin: auto;
+  align-self: center;
+  padding: 24px;
+  gap: 64px;
+}
+
  /* facilities page*/
  .row-images {
   display: grid;
@@ -597,7 +695,7 @@ hr {
 .modal {
   display: none;
   position: fixed;
-  z-index: 40;
+  z-index: 1;
   padding-top: 100px;
   left: 0;
   top: 0;
@@ -943,7 +1041,7 @@ padding: 2px;
   .program-content-cards{
     display: flex;
     justify-content: center;
-    width: 140px;
+    width: 120px;
     height: 80px;
     align-items: center;
   }
