@@ -564,6 +564,11 @@ hr {
 }
 
 /* tuition-fee */
+.tabTF{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
 .tablinkTF {
   background-color: #0F52BA;
   color: white;
@@ -573,9 +578,9 @@ hr {
   cursor: pointer;
   padding: 14px 16px;
   font-size: 17px;
-  width: 25%;
+  width: 100vw;
   border-left: 1px solid #fff;
-  border-right: 1px solid #fff;
+  border-right: 1px solid #fff ;
 }
 
 .tablinkTF:hover {
@@ -584,7 +589,9 @@ hr {
 
 /* Style the tab content (and add height:100% for full page content) */
 .tabcontentTF {
-  border: 1px solid #fff ;
+  border-left: 1px solid #fff ;
+  border-right: 1px solid #fff ;
+  border-bottom: 1px solid #fff ;
   color: white;
   display: none;
   padding: 100px 20px;
@@ -1083,6 +1090,73 @@ padding: 2px;
   font-size: 0.8em;
 }
 
+/* tuition */
+.tablinkTF{
+  font-size: 0.6em;
+}
+
+.tabcontentTF{
+  padding: 48px 16px;
+}
+
+.tuitiontable-wrapper h3{
+  border: 2px solid #1034A6;
+  background-color: #002387;
+  width: fit-content;
+  border-radius: 4px;
+  margin: auto;
+  padding: 4px;
+}
+
+
+
+.tuitiontable-wrapper table, .tuitiontable-wrapper th, .tuitiontable-wrapper td{
+  border:2px solid #002387;
+  background-color: #0066b2;
+  margin: 8px;
+  width: fit-content;
+  align-items: center;
+  font-size: 0.85em;
+}
+
+.tuitiontable-wrapper td{
+  padding: 2px;
+}
+
+.college-tuition-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  font-size: 1.2em;
+  height: auto;
+  margin: auto;
+  width: 100%;
+}
+
+.college-tuition-wrapper h3, .college-tuition-wrapper h4{
+  border-bottom: 2px solid #fff;
+  margin: 8px;
+}
+
+.college-tuition-wrapper div ul li{
+  margin-left: 24px;
+}
+
+.college-tuition-wrapper div ul li ul, .college-tuition-wrapper p{
+ margin-left: 24px;
+}
+
+
+.college-tuition-wrapper .college-tuition-container{
+  display: grid;
+  grid-template-columns: auto;
+  margin: auto;
+  align-self: center;
+  padding: 16px;
+  gap: 48px;
+}
 
 /* facilities page */
 .modal-content{
