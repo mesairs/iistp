@@ -1775,6 +1775,87 @@ padding: 2px;
   font-size: 0.8em;
 }
 
+/* news */
+#related-post {
+  height: auto;
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  gap: 16px;
+  border-top: 2px solid #fff;
+}
+
+.rp-wrap {
+  display: grid;
+  grid-template-columns: auto;
+  margin: 24px;
+}
+
+.rp-wrap hr {
+  color: #fff;
+  font-size: 2em;
+  width: 80vw;
+  margin: 12px 0px 24px 0px;
+}
+
+.rp-content-wrap {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 12px;
+}
+
+.fb-page {
+  text-align: center;
+  width: 400px;
+}
+#related-post hr {
+  margin: 4px;
+}
+.news-card-wrap {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 16px;
+  margin: auto;
+  padding: 24px;
+}
+
+.n-card {
+  width: 160px;
+  height: 220px;
+  border: solid 2px #fff;
+  position: relative;
+  margin: auto;
+}
+
+.n-card a {
+  text-decoration: none;
+  position: relative;
+}
+
+.n-card a:visited {
+  color: fff;
+  text-decoration: none;
+}
+
+.n-card img {
+  opacity: 0.95;
+  width: 100%;
+  height: 100%;
+}
+
+.n-card .news-title {
+  position: absolute;
+  bottom: 6px;
+  padding-left: 2px;
+}
+
+.n-card .news-title h4 {
+  color: #fff;
+  text-shadow: 1.41px 1.41px black, 2px 0 black, 1.41px -1.41px black,
+    0 -2px black;
+}
 /* tuition */
 .tablinkTF{
   font-size: 0.6em;
