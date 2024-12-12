@@ -348,6 +348,7 @@ header ul li ul li{
   grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
   grid-gap: 0.5rem;
   padding: 0 8vw 0 8vw;
+  margin-bottom: 12px;
 }
 
 .college-content-cards ul {
@@ -561,6 +562,167 @@ hr {
   padding: 50px;
   line-height: 1.5;
   color: #000;
+}
+
+/* news page */
+#news-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  color: #1434a4;
+}
+
+.news-wrap {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 8px;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  align-content: center;
+
+  position: relative;
+}
+
+.news-cc1 {
+  height: 600px;
+  padding: 5px;
+}
+
+.news-cc1 img {
+  width: 100%;
+  height: 90%;
+  object-fit: fill;
+  border: solid 2px #fff;
+}
+
+.news-cc2 img {
+  width: 360px;
+  height: 260px;
+  object-fit: fill;
+  border: solid 2px #fff;
+}
+
+.news-card a,
+.news-card2 a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.single {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 900px;
+}
+
+.double {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 340px;
+}
+
+#related-post {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: #fff;
+  gap: 16px;
+  border-top: 2px solid #fff;
+}
+
+.rp-wrap {
+  display: grid;
+  grid-template-columns: auto;
+  margin: 32px;
+}
+
+.rp-wrap hr {
+  color: #fff;
+  font-size: 2em;
+  width: 80vw;
+  margin: 12px 0px 24px 0px;
+}
+
+.rp-content-wrap {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 12px;
+}
+
+.fb-page {
+  width: 500px;
+}
+#related-post hr {
+  margin: 4px;
+}
+.news-card-wrap {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 16px;
+}
+
+.n-card {
+  width: 280px;
+  height: 320px;
+  border: solid 2px #fff;
+  position: relative;
+}
+
+.n-card a {
+  text-decoration: none;
+  position: relative;
+}
+
+.n-card a:visited {
+  color: fff;
+  text-decoration: none;
+}
+
+.n-card img {
+  opacity: 0.95;
+  width: 100%;
+  height: 100%;
+}
+
+.n-card .news-title {
+  position: absolute;
+  bottom: 6px;
+  padding-left: 2px;
+}
+
+.n-card .news-title h4 {
+  color: #fff;
+  text-shadow: 1.41px 1.41px black, 2px 0 black, 1.41px -1.41px black,
+    0 -2px black;
+}
+
+#news-page .swiper-pagination {
+  margin-bottom: 760px;
+  padding: 10px;
+  position: absolute;
+}
+
+#news-page .swiper-pagination-bullet {
+  border: solid 1px #7cb9e8;
+  background-color: #fff;
+  width: 200px;
+  border-radius: 0px;
+  opacity: 1;
+}
+
+#news-page .swiper-pagination-bullet-active {
+  width: 200px;
+  border-radius: 0px;
+  background-color: #fff !important;
 }
 
 /* tuition-fee */
@@ -872,11 +1034,89 @@ img.hover-shadow {
   color: #fff;
 }
 
+/* footer */
+.footer{
+  position: relative;
+  left: 0;
+  bottom: 0;
+  z-index: 20;
+  width: 100%;
+  background-color: #003399;
+  color: white;
+  text-align: center;
+  align-content: center;
+  border-top: 2px solid #fff;
+  padding: 24px;
+}
+
+.footer-wrapper{
+  display: grid;
+  grid-template-columns: auto;
+  margin: auto;
+  gap: 16px;
+}
+
+.footer-wrapper .footer-content{
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  justify-content: center;
+  gap: 24px;
+  line-height: 1.5;
+  text-decoration: none;
+}
+
+.footer-title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-title h2{
+  font-family: old;
+}
+
+.footer-title img{
+  width: 64px;
+}
+
+.footer-column a:hover{
+  text-shadow:
+  0 0 7px #fff,
+  0 0 10px #fff,
+  0 0 21px #fff,
+  0 0 42px #fff,
+  0 0 82px #fff,
+  0 0 92px #fff,
+  0 0 102px #fff;
+}
+
+.footer-wrapper .footer-logo img{
+ width: 64px;
+}
+
+.footer-wrapper .footer-social-imgs{
+  display: flex;
+flex-direction: row;
+justify-content: center;
+gap: 36px;
+}
+
+
+
+.footer-wrapper .footer-social-imgs a img{
+width: 24px;
+transition: transform .2s;
+}
+
+.footer-wrapper .footer-social-imgs a img:hover{
+  transform: scale(1.05);
+}
 
 @media (min-width: 320px) and (max-width: 480px) {
   header {
     padding: 10px 20px;
-    background-color: #0047ab;
+    background-color: #003399;
     z-index: 20;
   }
   header nav {
@@ -884,7 +1124,7 @@ img.hover-shadow {
     width: 100%;
     top: 66px;
     left: 0px;
-    background-color: #0047ab;
+    background-color: #003399;
     display: none;
   }
 
@@ -909,7 +1149,7 @@ img.hover-shadow {
     left: 0;
   }
   header nav ul li:hover ul li {
-    background-color: #0047ab;
+    background-color: #003399;
   }
   .menuToggle {
     position: relative;
