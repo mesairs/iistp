@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IIST Student Organizations</title>
+    <link rel="stylesheet" href="../res/style.css">
+    <link rel="icon" href="../res/images/logo.png" type="images/icon type" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="https://mesairs.github.io/iistp/" class="logo"><img src="../res/images/logo.png">
+            <h2>Imus Institute of Science and Technology</h2>
+        </a>
+        <div class="menuToggle"> </div>
+        <nav>
+            <ul>
+                <li><a href="https://mesairs.github.io/iistp/">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../academics.html">Academics</a> </li>
+                <li><a>Campus<b>&#9662;</b></a>
+                    <ul>
+                        <li><a href="./news.html">News</a></li>
+                        <li><a href="./tuition.html">Tuition</a></li>
+                        <li><a href="./facilities.html">Facilities</a></li>
+                        <li><a href="./studentorg.html">Student Orgs</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="intro-placeholder">
+        <h1>Student Organizations</h1>
+        <p>Organizations to choose from</p>
+    </section>
+
+
+    <div class="stud-orgs-container">
+        <a href="https://www.facebook.com/aces.iist">
+            <div class="so-item">
+                <img src="../res/images/aces.jpg" alt="">
+                <h2>ACES</h2>
+                <p>Association of Computer Studies and Engineering Students</p>
+            </div>
+        </a>
+
+        <a href="https://www.facebook.com/CEAIIST/">
+            <div class="so-item">
+                <img src="../res/images/cea.jpg" alt="">
+                <h2>CEA</h2>
+                <p>Communicators and Educators Association</p>
+            </div>
+        </a>
+
+        <a href="https://www.facebook.com/profile.php?id=61551460457511">
+            <div class="so-item">
+                <img src="../res/images/flare.jpg" alt="">
+                <h2>FLARE</h2>
+                <p>Future Leaders in Administration, Resources and Entrepreneurship</p>
+            </div>
+        </a>
+
+        <a href="https://www.facebook.com/iistcsg">
+            <div class="so-item">
+                <img src="../res/images/csg.jpg" alt="">
+                <h2>IIST CSG</h2>
+                <p>IIST Central Student Government</p>
+            </div>
+        </a>
+
+        <a href="https://www.facebook.com/jpia.iist">
+            <div class="so-item">
+
+                <img src="../res/images/jpia.jpg" alt="">
+                <h2>JPIA</h2>
+                <p>Junior Philippine Institute of Accountants</p>
+            </div>
+        </a>
+
+        <a href="https://www.facebook.com/smharttsiist/">
+            <div class="so-item">
+                <img src="../res/images/smhartts.jpg" alt="">
+                <h2>SMHARTTS</h2>
+                <p>Students of Management in Hotel & Restaurant, Travel, and Tourism Society</p>
+            </div>
+        </a>
+    </div>
+    <div class="footer">
+        <div class="footer-wrapper">
+            <div class="footer-title">
+                <img src="../res/images/logo.png">
+                <h2>Imus Institute of Science and Technology </h2>
+            </div>
+
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <p>82 Nueno Ave, </p>
+                        <p>Imus, Cavite, 4103</p>
+                        <hp>(046) 471 8092</p>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <a href="../about.html">
+                        <p>‣ About</p>
+                    </a>
+                    <a href="../academics.html">
+                        <p>‣ Academics</p>
+                    </a>
+                    <a href="../campus/tuition.html">
+                        <p>‣ Tuition Fee</p>
+                    </a>
+                </div>
+
+                <div class="footer-column">
+                    <a href="../campus/news.html">
+                        <p>‣ News</p>
+                    </a>
+                    <a href="../campus/facilities.html">
+                        <p>‣ Facilities</p>
+                    </a>
+                    <a href="../campus/studentorg.html">
+                        <p>‣ Student Orgs</p>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-social-imgs">
+                <a href="mailto:iistedu2020@gmail.com"><img src="../res/images/gmail.svg"></a>
+                <a href="https://www.facebook.com/ImusInstituteInc"><img src="../res/images/fb.svg"></a>
+                <a href="https://twitter.com/imus_institute"><img src="../res/images/twitter.svg"></a>
+            </div>
+            <div class="copyright">
+                <p>Copyright © 2024 Imus Institute of Science and Technology</p>
+                <p>All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        let menuToggle = document.querySelector('.menuToggle');
+        let header = document.querySelector('header');
+        menuToggle.onclick = function () {
+            header.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
