@@ -508,7 +508,7 @@ hr {
   text-align: center;
   gap: 50px;
   margin: auto;
-  width: 80%;
+  width: 100%;
   font-size: 1em;
 }
 
@@ -1485,5 +1485,13 @@ padding: 2px;
   grid-template-columns: auto auto;
   width: auto;
   gap: 12px;
+}
+
+.footer{
+  font-size: 0.72em;
+}
+
+.footer .footer-wrapper{
+  gap: 8px;
 }
 }
