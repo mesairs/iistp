@@ -99,6 +99,10 @@ header ul li ul li{
   background-position: center;
 }
 
+.intro-placeholder{
+  padding-top: 120px;
+}
+
 /* home page */
 /* home-page - welcome-section */
 .welcome-wrapper{
@@ -242,6 +246,107 @@ header ul li ul li{
   font-size: 1.5em;
   align-content: center;
 }
+
+/* admission page */
+
+.button-ad-container{
+  display: flex;
+  flex-direction: row;
+  margin: 24px;
+  justify-content: center;
+  transition: transform .2s;
+}
+
+.button-ad-container .btn{
+  text-align: center;
+  font-size: 2em;
+  font-weight: 700;
+  background-color: #FFD700;
+  padding: 13px 18px;
+  width: auto;
+  height: auto;
+  border: 1px solid #fff;
+  border-radius: 4px;
+}
+
+.button-ad-container .btn a{
+  color: #003399;
+}
+
+.button-ad-container .btn:hover{
+  cursor: pointer;
+  transform: scale(1.02);
+}
+
+
+.contacts-container{
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: #1434a4;
+  margin: 24px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 24px;
+  width: fit-content;
+  gap: 24px;
+  
+}
+.contacts-card{
+line-height: 2;
+}
+
+.contacts-card a{
+  text-decoration: underline;
+}
+
+.tabAD{
+  float: left;
+  background-color: #0F52BA;
+  width: 30%;
+  height: 300px;
+  border-top: 1px solid #ccc;
+}
+.tablinkAD {
+  display: block;
+  background-color: inherit;
+  color: #fff;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tablinkAD:hover {
+  background-color: #1034A6;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontentAD {
+  float: left;
+  padding: 0px 12px;
+  border-top: 1px solid #ccc;
+  width: 70%;
+  border-left: none;
+  height: 421px;
+}
+
+.acadcontent-wrapper{
+  display: flex;
+  flex-direction: row;
+ justify-content: center;
+ gap: 24px;
+ padding: 24px;
+ margin: auto;
+ width: 80%;
+}
+
+
+
+
 /* academics page */
 .program-wrapper {
   display: grid;
@@ -777,10 +882,13 @@ hr {
   height: 100%;
 }
 
-#Gradeschool {background-color: #17569a;}
-#Juniorhighschool {background-color: #17569a;}
-#Seniorhighschool {background-color: #17569a;}
-#College {background-color: #17569a;}
+#Kindergarten {background-color: #1034A6;}
+#Gradeschool{background-color: #1034A6;}
+#Elementary {background-color: #1034A6;}
+#Juniorhighschool {background-color: #1034A6;}
+#Seniorhighschool {background-color: #1034A6;}
+#College {background-color: #1034A6;}
+#GraduateStudies{background-color: #1034A6;}
 
 
 .tuitiontable-wrapper{
@@ -1202,6 +1310,10 @@ transition: transform .2s;
     transform: rotate(315deg);
   }
 
+  .intro-placeholder h1{
+    padding-top: 72px;
+  }
+
   .welcome-wrapper{
     height: 50%;
     display: grid;
@@ -1279,6 +1391,90 @@ padding: 2px;
     font-size: 0.8em;
     text-align: justify;
     width: 65%;
+  }
+
+  /* admission page */
+
+  .button-ad-container{
+    display: flex;
+    flex-direction: row;
+    margin: 24px;
+    justify-content: center;
+    transition: transform .2s;
+  }
+  
+  .button-ad-container .btn{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 700;
+    background-color: #FFD700;
+    padding: 13px 18px;
+    width: auto;
+    height: auto;
+    border: 1px solid #fff;
+    border-radius: 4px;
+  }
+  
+  .button-ad-container .btn a{
+    color: #003399;
+  }
+  
+  .button-ad-container .btn:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+  }
+  
+  
+  .contacts-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: #1434a4;
+    margin: auto;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 24px;
+    width: fit-content;
+    gap: 24px;
+    
+  }
+  .contacts-card{
+  line-height: 2;
+  }
+  
+  .contacts-card a{
+    text-decoration: underline;
+  }
+  
+  .tabAD{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .tablinkAD {
+    background-color: #0F52BA;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 16px;
+    width: 100%;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff ;
+  }
+  
+  .tablinkAD:hover {
+    background-color: #17569a;
+  }
+  
+  
+  .acadcontent-wrapper{
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+   margin: auto;
+   width: 400;
   }
 
   /* academics page */
@@ -1758,6 +1954,60 @@ padding: 2px;
     text-align: justify;
     width: 100%;
   }
+/* admission page */
+.tabAD{
+  float: left;
+  background-color: #0F52BA;
+  width: 30%;
+  height: 420px;
+  border-top: 1px solid #ccc;
+}
+.tablinkAD {
+  display: block;
+  background-color: inherit;
+  color: #fff;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 0.8em;
+}
+
+.tablinkAD:hover {
+  background-color: #1034A6;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontentAD {
+  float: left;
+  padding: 0px 12px;
+  border-top: 1px solid #ccc;
+  width: 70%;
+  font-size: 0.5em;
+  border-left: none;
+  height: 300px;
+}
+
+.acadcontent-wrapper{
+  display: flex;
+  flex-direction: column;
+ justify-content: center;
+ gap: 24px;
+ padding: 24px;
+ margin: auto;
+ width: 100%;
+}
+
+.acadcontent-wrapper p{
+  font-size: 1em;
+}
+
+.contacts-container{
+  margin: 2px;
+}
 
   /* academics page */
   .intro-placeholder{
@@ -2072,6 +2322,10 @@ padding: 2px;
 }
 
 .footer .footer-content p {
+  font-size: 0.6em;
+}
+
+.copyright p{
   font-size: 0.6em;
 }
 }
