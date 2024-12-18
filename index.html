@@ -25,7 +25,8 @@
             <ul>
                 <li><a href="https://mesairs.github.io/iistp/">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="academics.html">Academics</a> </li>
+                <li><a href="admission.html">Admission</a> </li>
+                <li><a href="academics.html">Academics</a></li>
                 <li><a>Campus<b>&#9662;</b></a>
                     <ul>
                         <li><a href="./campus/news.html">News</a></li>
@@ -47,10 +48,10 @@
                 </div>
                 <div class="button-intro-container">
                     <div class="btn">
-                        <a href="https://docs.google.com/forms/d/1272WKSzjTu8BT-8JSTK_MVCOs0MH-EEHZaeImHo5eas/viewform?edit_requested=trueabout.html">PRE-REGISTER</a>
+                        <a href="admission.html">ENROLLMENT PROCEDURES</a>
                     </div>
+                </div>
             </div>
-</div>
             <div class="welcome-video">
                 <video controls>
                     <source src="./res/images/vid.mp4" type="video/mp4">
@@ -74,7 +75,7 @@
                 </div>
             </div>
         </div>
-        
+
         <!-- school-stats -->
         <div class="school-info-wrapper">
             <div class="school-info-container">
@@ -109,80 +110,92 @@
     </div>
     <div class="footer">
         <div class="footer-wrapper">
-        <div class="footer-title">
-            <img src="res/images/logo.png">
-            <h2>Imus Institute of Science and Technology </h2>
-         </div>
-        
+            <div class="footer-title">
+                <img src="res/images/logo.png">
+                <h2>Imus Institute of Science and Technology </h2>
+            </div>
+
             <div class="footer-content">
-            <div class="footer-column">
-                <div class="footer-logo">
-                    <p>82 Nueno Ave, </p>
-                    <p>Imus, Cavite, 4103</p>
-                    <p>(046) 471 8092</p>
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <p>82 Nueno Ave, </p>
+                        <p>Imus, Cavite, 4103</p>
+                        <p>(046) 471 8092</p>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <a href="./about.html">
+                        <p>‣ About</p>
+                    </a>
+                    <a href="./academics.html">
+                        <p>‣ Admission</p>
+                    </a>
+                    <a href="./campus/tuition.html">
+                        <p>‣ Academics</p>
+                    </a>
+                </div>
+
+                <div class="footer-column">
+                    <a href="./campus/news.html">
+                        <p>‣ Tuition</p>
+                    </a>
+                    <a href="./campus/facilities.html">
+                        <p>‣ Facilities</p>
+                    </a>
+                    <a href="./campus/studentorg.html">
+                        <p>‣ Student Orgs</p>
+                    </a>
                 </div>
             </div>
-
-            <div class="footer-column">
-                <a href="./about.html"><p>‣ About</p></a>
-                <a href="./academics.html"><p>‣ Academics</p></a>
-                <a href="./campus/tuition.html"><p>‣ Tuition Fee</p></a>
+            <div class="footer-social-imgs">
+                <a href="mailto:iistedu2020@gmail.com"><img src="res/images/gmail.svg"></a>
+                <a href="https://www.facebook.com/ImusInstituteInc"><img src="res/images/fb.svg"></a>
+                <a href="https://twitter.com/imus_institute"><img src="res/images/twitter.svg"></a>
             </div>
-
-            <div class="footer-column">
-                <a href="./campus/news.html"><p>‣ News</p></a>
-                <a href="./campus/facilities.html"><p>‣ Facilities</p></a>
-                <a href="./campus/studentorg.html"><p>‣ Student Orgs</p></a>
+            <div class="copyright">
+                <p>Copyright © 2024 Imus Institute of Science and Technology</p>
+                <p>All rights reserved.</p>
             </div>
         </div>
-        <div class="footer-social-imgs">
-            <a href="mailto:iistedu2020@gmail.com"><img src="res/images/gmail.svg"></a>
-            <a href="https://www.facebook.com/ImusInstituteInc"><img src="res/images/fb.svg"></a>
-            <a href="https://twitter.com/imus_institute"><img src="res/images/twitter.svg"></a>
-            </div>
-        <div class="copyright">
-            <p>Copyright © 2024 Imus Institute of Science and Technology</p>
-            <p>All rights reserved.</p>
-        </div>
-</div>
-</div>
+    </div>
     <script>
-       var runAlready;
-var counting;
+        var runAlready;
+        var counting;
 
-function startCounter(a) {
-  runAlready = true;
-  counting = true;
-  $('.counter-value').each(function() {
-    var $this = $(this);
-    $this.text(a);
-    countTo = $this.attr('data-count');
-    $({
-      countNum: $this.text()
-    }).animate({
-      countNum: countTo
-    }, 
-    {
-      duration: 5000,
-      easing: 'swing',
-      step: function() {
-        $this.text(Math.floor(this.countNum));
-      },
-      complete: function() {
-        $this.text(this.countNum);
-        counting = false;
-      }
-    });
-  })
-}
+        function startCounter(a) {
+            runAlready = true;
+            counting = true;
+            $('.counter-value').each(function () {
+                var $this = $(this);
+                $this.text(a);
+                countTo = $this.attr('data-count');
+                $({
+                    countNum: $this.text()
+                }).animate({
+                    countNum: countTo
+                },
+                    {
+                        duration: 5000,
+                        easing: 'swing',
+                        step: function () {
+                            $this.text(Math.floor(this.countNum));
+                        },
+                        complete: function () {
+                            $this.text(this.countNum);
+                            counting = false;
+                        }
+                    });
+            })
+        }
 
-$(window).scroll(function() {
-  var oTop = $('#counter').offset().top;
-  var a = 0;
-  if (!runAlready && $(window).scrollTop() > oTop || !counting && $(window).scrollTop() < oTop) {
-    startCounter(a);
-  }
-});
+        $(window).scroll(function () {
+            var oTop = $('#counter').offset().top;
+            var a = 0;
+            if (!runAlready && $(window).scrollTop() > oTop || !counting && $(window).scrollTop() < oTop) {
+                startCounter(a);
+            }
+        });
     </script>
     <script>
         let menuToggle = document.querySelector('.menuToggle');
